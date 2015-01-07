@@ -1,0 +1,38 @@
+Subject: [announce] Vicare Scheme Emacs mode 0.4d0
+
+			      Vicare Mode
+			      ===========
+
+
+This  package is  a distribution  of  Emacs Lisp  files implementing  an
+editing mode  for Vicare Scheme  under GNU  Emacs.  Vicare Scheme  is an
+R6RS compliant  Scheme implementation in  the form of a  native compiler
+for x86 architectures, officially supporting GNU+Linux systems.
+
+  This package makes use of the GNU Autotools.
+
+  Development of Vicare Mode takes place at:
+
+	      <http://github.com/marcomaggi/vicare-mode/>
+
+development of Vicare Scheme takes place at:
+
+	     <http://github.com/marcomaggi/vicare-scheme/>
+
+  The last  time the author  bothered to  update this paragraph,  he had
+tested Vicare Scheme version 0.4d0 and GNU Emacs 24.3.1.
+
+
+Notes for revision 0.4d0
+------------------------
+
+* The version  number of  Vicare Mode is  synchronised with  the version
+  number of the supported Vicare Scheme release.
+
+
+### end of file
+# Local Variables:
+# mode: text
+# fill-column: 72
+# paragraph-start: "*"
+# End:
