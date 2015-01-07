@@ -166,6 +166,14 @@ end of Vicare Scheme source code files:
 ;; End:
 @end example
 
+To enable automatic insertion of Vicare Scheme source file templates we
+can do:
+
+@example
+(add-to-list 'auto-insert-alist
+  '("\\.\\(sls\\|sps\\)\\'" . vicare-auto-insert-template))
+@end example
+
 @c page
 @c ------------------------------------------------------------
 @c Appendices.
