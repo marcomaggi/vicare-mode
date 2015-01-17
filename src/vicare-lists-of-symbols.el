@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-01-07 10:06:01 marco>
+;; Time-stamp: <2015-01-17 16:50:11 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -120,6 +120,8 @@
     "identifier-syntax" "fluid-let-syntax" "with-syntax"
 
     "eol-style" "error-handling-mode" "buffer-mode" "file-options"
+
+    "parallel" "monitor" "yield"
 
     ;;Auxiliary syntaxes for clauses.
     "protocol" "parent" "parent-rtd" "nongenerative"
