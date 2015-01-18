@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-01-17 16:50:11 marco>
+;; Time-stamp: <2015-01-18 20:41:01 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -121,7 +121,7 @@
 
     "eol-style" "error-handling-mode" "buffer-mode" "file-options"
 
-    "parallel" "monitor" "yield"
+    "coroutine" "yield" "parallel" "monitor"
 
     ;;Auxiliary syntaxes for clauses.
     "protocol" "parent" "parent-rtd" "nongenerative"
