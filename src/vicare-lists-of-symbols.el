@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-01-18 20:41:01 marco>
+;; Time-stamp: <2015-01-21 16:25:45 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -121,7 +121,7 @@
 
     "eol-style" "error-handling-mode" "buffer-mode" "file-options"
 
-    "coroutine" "yield" "parallel" "monitor"
+    "parallel" "monitor"
 
     ;;Auxiliary syntaxes for clauses.
     "protocol" "parent" "parent-rtd" "nongenerative"
@@ -295,6 +295,7 @@ language keywords.")
     "condition-predicate"
     "condition-who"
     "condition?"
+    "coroutine"
     "cos"
     "current-error-port"
     "current-input-port"
@@ -738,6 +739,7 @@ language keywords.")
     "vector-sort!"
     "vector?"
     "violation?"
+    "yield"
     "warning?"
     "who-condition?"
     "with-exception-handler"
