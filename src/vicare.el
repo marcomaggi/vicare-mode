@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-01-17 16:48:57 marco>
+;; Time-stamp: <2015-01-22 08:32:49 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -593,7 +593,6 @@ in the Scheme mode hook."
     (internal-body					. 0)
     (internal-define					. 2)
     (lambda*						. 1)
-    (lambda-returnable					. 1)
     (eval-for-expand					. 0)
     (fluid-let-syntax					. 1)
     (format						. 1)
@@ -606,6 +605,7 @@ in the Scheme mode hook."
     (parametrise					. 1)
     (recursion						. 1)
     (receive						. 2)
+    (returnable						. 0)
     (try						. 1)
     (unwind-protect					. 1))
   "List of indentation rules for Vicare Scheme forms.")

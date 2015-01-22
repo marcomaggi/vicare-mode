@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-01-21 16:25:45 marco>
+;; Time-stamp: <2015-01-22 08:27:48 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -771,7 +771,7 @@ language built ins.")
     "stale-when" "foreign-call" "case-identifiers"
     "for-each-in-order" "internal-body"
     "internal-define" "internal-lambda" "internal-case-lambda"
-    "lambda-returnable" "begin-returnable"
+    "returnable"
     "cond-expand"
 
     "expander-options" "compiler-options"
