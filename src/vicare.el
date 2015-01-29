@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-01-29 18:24:47 marco>
+;; Time-stamp: <2015-01-29 18:35:24 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -572,7 +572,7 @@ in the Scheme mode hook."
   "List of indentation rules for R6RS Scheme forms.")
 
 (defconst vicare-indent-vicare
-  '((begin0						. 0)
+  '((begin0						. 1)
     (begin-for-syntax					. 0)
     (catch						. 1)
     (case-define					. 1)
