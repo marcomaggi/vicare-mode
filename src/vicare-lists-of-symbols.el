@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-01-29 18:24:26 marco>
+;; Time-stamp: <2015-01-30 11:17:11 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -787,7 +787,8 @@ language built ins.")
     "infix" "++" "--" "pre-incr!" "pre-decr!" "post-incr!" "post-decr!"
     "try" "catch" "finally"
 
-    "unwind-protect"
+    "unwind-protect" "with-unwind-protection"
+    "with-escape-handlers-stack" "with-escape-handler" "run-escape-handlers"
 
     "for" "only" "except" "rename" "prefix" "deprefix"
     "export" "options"
@@ -1911,8 +1912,6 @@ language built ins.")
     "compile-time-operand-core-type-error?"
     "make-compile-time-retval-core-type-error"
     "compile-time-retval-core-type-error?"
-
-    "with-unwind-protection"
     )
   "List of function identifiers from the Vicare libraries.")
 
