@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-01-29 18:35:24 marco>
+;; Time-stamp: <2015-01-30 09:27:30 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -756,6 +756,7 @@ in the Scheme mode hook."
     (with-fields					. 1)
     (with-namespace					. 1)
     (with-reference-counting				. 1)
+    (with-result					. 0)
     (let-sexp-variables					. 1))
   "List of indentation rules for custom Scheme forms.")
 
