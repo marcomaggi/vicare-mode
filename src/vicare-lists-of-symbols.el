@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-01-30 11:17:11 marco>
+;; Time-stamp: <2015-02-02 11:29:52 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1912,6 +1912,10 @@ language built ins.")
     "compile-time-operand-core-type-error?"
     "make-compile-time-retval-core-type-error"
     "compile-time-retval-core-type-error?"
+
+    "make-non-reinstatable-violation"
+    "non-reinstatable-violation?"
+    "non-reinstatable-violation"
     )
   "List of function identifiers from the Vicare libraries.")
 
