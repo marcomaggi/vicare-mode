@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-02-02 11:30:34 marco>
+;; Time-stamp: <2015-02-04 10:10:43 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -611,7 +611,9 @@ in the Scheme mode hook."
     (unwind-protect					. 1)
     (with-unwind-protection				. 1)
     (with-escape-handlers-stack				. 0)
-    (with-escape-handler				. 1))
+    (with-escape-handler				. 1)
+    (with-blocked-exceptions				. 1)
+    (with-current-dynamic-environment			. 1))
   "List of indentation rules for Vicare Scheme forms.")
 
 (defconst vicare-indent-srfi
