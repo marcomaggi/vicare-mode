@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-02-09 09:43:33 marco>
+;; Time-stamp: <2015-02-09 12:53:28 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -296,7 +296,7 @@ language keywords.")
     "condition-who"
     "condition?"
     "coroutine"
-    "coroutine-uid"
+    "current-coroutine-uid"
     "coroutine-uid?"
     "cos"
     "current-error-port"
