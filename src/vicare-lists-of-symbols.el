@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-02-04 10:10:15 marco>
+;; Time-stamp: <2015-02-09 08:03:22 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -296,6 +296,7 @@ language keywords.")
     "condition-who"
     "condition?"
     "coroutine"
+    "coroutine-uid"
     "cos"
     "current-error-port"
     "current-input-port"
@@ -309,6 +310,7 @@ language keywords.")
     "div-and-mod"
     "div0"
     "div0-and-mod0"
+    "dump-coroutines"
     "dynamic-wind"
     "enum-set->list"
     "enum-set-complement"
@@ -344,6 +346,7 @@ language keywords.")
     "file-exists?"
     "filter"
     "find"
+    "finish-coroutines"
     "finite?"
     "fixnum->flonum"
     "fixnum-width"
@@ -647,6 +650,7 @@ language keywords.")
     "remp"
     "remq"
     "remv"
+    "reset-coroutines!"
     "reverse"
     "round"
     "scheme-report-environment"
