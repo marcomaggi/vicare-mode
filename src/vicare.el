@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-02-04 10:10:43 marco>
+;; Time-stamp: <2015-02-10 14:45:13 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -600,7 +600,7 @@ in the Scheme mode hook."
     (module						. 1)
     (monitor						. 1)
     (non-reinstatable-violation				. 1)
-    (parallel						. 0)
+    (concurrently					. 0)
     (parameterize					. 1)
     (parameterise					. 1)
     (parametrise					. 1)
