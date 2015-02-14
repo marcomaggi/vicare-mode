@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-02-10 14:45:13 marco>
+;; Time-stamp: <2015-02-14 07:10:12 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -736,6 +736,7 @@ in the Scheme mode hook."
     (with-dangerous-arguments-validation		. 2)
     (with-compensations					. 0)
     (with-compensations/on-error			. 0)
+    (with-compensation-handler				. 1)
     (with-general-c-strings				. 1)
     (with-general-c-strings/false			. 1)
     (with-general-c-buffers				. 1)

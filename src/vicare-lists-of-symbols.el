@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-02-10 14:44:36 marco>
+;; Time-stamp: <2015-02-14 07:09:48 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -839,6 +839,8 @@ language built ins.")
 
     "with-compensations"
     "with-compensations/on-error"
+    "with-compensation-handler"
+    "compensate"
     "push-compensation"
 
     "with-input-from-string"
@@ -852,7 +854,7 @@ language built ins.")
   '("__who__" "__file__" "__line__" "<>"
     "?" ":" "!" "%" "&" "^" "~" "<<" ">>" "⏐" "⏐⏐" "¦" "¦¦" "**" "=="
     "∧" "∨" "⊻" "¬" "×" "≠" "⋅"
-    "brace" "return" "continue" "break" "with" "compensate"
+    "brace" "return" "continue" "break" "with"
     "visit-upon-loading" "tagged-language" "strict-r6rs"
     "stdin" "stdout" "stderr")
   "List of auxiliary syntaxes from the Vicare libraries.")
