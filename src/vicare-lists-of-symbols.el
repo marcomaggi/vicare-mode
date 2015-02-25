@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-02-20 07:57:27 marco>
+;; Time-stamp: <2015-02-25 10:05:54 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -288,6 +288,7 @@ language keywords.")
     "close-port"
     "command-line"
     "complex?"
+    "compound-condition?"
     "condition"
     "condition-accessor"
     "condition-irritants"
