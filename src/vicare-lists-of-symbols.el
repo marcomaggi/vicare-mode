@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-02-25 10:05:54 marco>
+;; Time-stamp: <2015-02-25 10:41:36 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -288,7 +288,6 @@ language keywords.")
     "close-port"
     "command-line"
     "complex?"
-    "compound-condition?"
     "condition"
     "condition-accessor"
     "condition-irritants"
@@ -813,6 +812,7 @@ language built ins.")
     "lambda*" "case-lambda*"
 
     "type-descriptor" "is-a?" "slot-set!" "slot-ref"
+    "condition-is-a?"
 
     "tag-predicate"
     "tag-procedure-argument-validator" "tag-return-value-validator"
@@ -1008,6 +1008,8 @@ language built ins.")
     "command-line-arguments"
     "complex-conjugate"
     "compnum?"
+    "compound-condition?"
+    "condition-and-rtd?"
     "condition-errno"
     "condition-h_errno"
     "cons"
