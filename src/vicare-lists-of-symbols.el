@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-02-27 09:31:15 marco>
+;; Time-stamp: <2015-02-27 10:14:40 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1950,11 +1950,8 @@ language built ins.")
     "store-value"
     "continue-restart"
     "abort-restart"
-    "make-restarts-condition"
-    "restarts-condition?"
-    "make-restart-internal-error"
-    "restart-internal-error?"
-    "raise-restart-internal-error"
+    "make-restarts-error-condition"
+    "restarts-error-condition?"
     "make-restarts-control-error"
     "restarts-control-error?"
     "signal-restarts-control-error"
