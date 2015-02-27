@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-02-25 10:41:36 marco>
+;; Time-stamp: <2015-02-27 09:31:15 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -768,6 +768,7 @@ language built ins.")
 ;;Here we should put lists of identifiers from our preferred libraries.
 ;;
 
+
 (defconst vicare-warning-list
   '("FIXME" "WARNING" "XXX" "NOTE")
   "List of strings to be highlighted as warning when present in a comment.")
@@ -848,6 +849,14 @@ language built ins.")
     "with-local-storage"
     "with-output-to-port"
     "with-output-to-string"
+
+    ;; restarts
+    "handler-case"
+    "ignore-errors"
+    "handler-bind"
+    "restart-case"
+    "with-condition-restarts"
+    "with-return-to-signal-on-unhandled-exception"
     )
   "List of syntax identifiers from some Vicare libraries.")
 
@@ -1930,6 +1939,28 @@ language built ins.")
     "make-non-reinstatable-violation"
     "non-reinstatable-violation?"
     "non-reinstatable-violation"
+
+    ;; restarts
+    "signal"
+    "find-restart"
+    "invoke-restart"
+    "restart-name"
+    "compute-restarts"
+    "use-value"
+    "store-value"
+    "continue-restart"
+    "abort-restart"
+    "make-restarts-condition"
+    "restarts-condition?"
+    "make-restart-internal-error"
+    "restart-internal-error?"
+    "raise-restart-internal-error"
+    "make-restarts-control-error"
+    "restarts-control-error?"
+    "signal-restarts-control-error"
+    "make-undefined-restart-error"
+    "undefined-restart-error?"
+    "raise-undefined-restart-error"
     )
   "List of function identifiers from the Vicare libraries.")
 
