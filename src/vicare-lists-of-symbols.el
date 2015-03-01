@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-02-27 10:14:40 marco>
+;; Time-stamp: <2015-03-01 06:43:04 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1541,6 +1541,7 @@ language built ins.")
     "unbound-object"
     "unbound-object?"
     "unicode-printable-char?"
+    "unwinding-call/cc"
     "utf-16be-codec"
     "utf16be->string"
     "utf-16le-codec"
