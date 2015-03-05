@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-05 06:46:56 marco>
+;; Time-stamp: <2015-03-05 08:48:48 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1823,13 +1823,13 @@ language built ins.")
     "library-cache-search-path"
     "library-extensions"
     "compiled-libraries-cache-directory"
-    "compiled-libraries-store-directory"
+    "compiled-libraries-build-directory"
     "library-name->filename-stem"
     "library-reference->filename-stem"
     "directory+library-stem->library-binary-pathname"
     "directory+library-stem->library-source-pathname"
-    "library-name->library-binary-pathname-in-store-directory"
-    "library-reference->library-binary-pathname-in-store-directory"
+    "library-name->library-binary-pathname-in-build-directory"
+    "library-reference->library-binary-pathname-in-build-directory"
     "library-source-pathname->library-binary-pathname-in-cache-directory"
     "library-source-pathname->library-stem-pathname"
     "library-source-pathname->library-binary-tail-pathname"
