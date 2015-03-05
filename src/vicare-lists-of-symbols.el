@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-01 11:23:30 marco>
+;; Time-stamp: <2015-03-05 06:46:56 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1172,7 +1172,6 @@ language built ins.")
     "last-pair"
     "library"
     "load"
-    "load-r6rs-script"
     "lookahead-two-u8"
     "machine-word->integer"
     "make-binary-file-descriptor-input/output-port"
