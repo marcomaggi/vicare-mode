@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-05 08:48:48 marco>
+;; Time-stamp: <2015-03-08 10:16:35 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1991,6 +1991,7 @@ language built ins.")
 (defconst vicare-nausicaa-functions-list
   '("add-result" "get-result"
     "check-report" "check-set-mode!" "check-reset!" "check-passed"
+    "check-display" "check-write" "check-newline" "check-pretty-print" "check-quiet-tests?"
     "pretty-print")
   "List of function identifiers from some Nausicaa libraries.")
 
