@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-01 06:43:38 marco>
+;; Time-stamp: <2015-03-09 07:46:29 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -717,8 +717,10 @@ in the Scheme mode hook."
     (vector-and-fold-right*/stx				. 1)
     (vector-and-fold-right/with-index			. 1)
     (vector-any						. 1)
-    (vector-exists					. 1)
     (vector-every					. 1)
+    (vector-exists					. 1)
+    (vector-for-all					. 1)
+    (vector-find					. 1)
     (vector-fold-left					. 1)
     (vector-fold-left*					. 1)
     (vector-fold-left/stx				. 1)

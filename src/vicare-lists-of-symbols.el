@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-08 10:16:35 marco>
+;; Time-stamp: <2015-03-09 07:39:58 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1556,6 +1556,7 @@ language built ins.")
     "vector-copy!"
     "vector-empty?"
     "vector-exists"
+    "vector-find"
     "vector-for-all"
     "vector-resize"
     "verbose-timer"
