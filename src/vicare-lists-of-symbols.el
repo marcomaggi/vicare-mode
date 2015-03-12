@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-12 12:39:59 marco>
+;; Time-stamp: <2015-03-12 15:37:03 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -947,7 +947,6 @@ language built ins.")
     "bwp-object"
     "bytevector-append"
     "bytevector-empty?"
-    "bytevector-hash"
     "bytevector->base64"
     "bytevector->bignum"
     "bytevector->c4b-list"
@@ -1945,6 +1944,17 @@ language built ins.")
     "make-non-reinstatable-violation"
     "non-reinstatable-violation?"
     "non-reinstatable-violation"
+
+    ;; hash functions
+    "bytevector-hash"
+    "fixnum-hash"
+    "exact-integer-hash"
+    "flonum-hash"
+    "number-hash"
+    "char-hash"
+    "struct-hash"
+    "record-hash"
+    "object-hash"
 
     ;; restarts
     "signal"
