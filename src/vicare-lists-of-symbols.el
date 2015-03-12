@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-12 15:37:03 marco>
+;; Time-stamp: <2015-03-12 15:59:28 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1952,6 +1952,11 @@ language built ins.")
     "flonum-hash"
     "number-hash"
     "char-hash"
+    "char-ci-hash"
+    "boolean-hash"
+    "void-hash"
+    "eof-object-hash"
+    "would-block-hash"
     "struct-hash"
     "record-hash"
     "object-hash"
