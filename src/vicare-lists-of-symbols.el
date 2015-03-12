@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-10 12:02:48 marco>
+;; Time-stamp: <2015-03-12 09:06:24 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -782,6 +782,7 @@ language built ins.")
     "internal-define" "internal-lambda" "internal-case-lambda"
     "returnable"
     "cond-expand"
+    "do*" "dolist" "dotimes"
 
     "expander-options" "compiler-options"
 
@@ -1978,7 +1979,7 @@ language built ins.")
     "lambda/tags" "case-lambda/tags"
     "with-compensations" "with-compensations/on-error"
     "compensate" "with" "push-compensation"
-    "do*" "tag-case"
+    "tag-case"
     ;;These definitions are to be handled separately.
     ;;
     ;; "define-class" "define-label" "define-builtin-label" "define-mixin"

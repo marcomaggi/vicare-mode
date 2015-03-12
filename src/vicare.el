@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-10 12:03:08 marco>
+;; Time-stamp: <2015-03-12 09:06:47 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -589,6 +589,8 @@ in the Scheme mode hook."
     (define-maker					. 2)
     (define-syntax*					. 1)
     (do*						. 2)
+    (dolist						. 1)
+    (dotimes						. 1)
     (inherit						. 1)
     (internal-body					. 0)
     (internal-define					. 2)
