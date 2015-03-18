@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-14 08:43:13 marco>
+;; Time-stamp: <2015-03-18 07:21:16 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1244,6 +1244,7 @@ language built ins.")
     "memory-copy"
     "memset"
 ;;; "module"
+    "mutable-hashtable?"
     "neq?"
     "new-cafe"
     "new-interaction-environment"
