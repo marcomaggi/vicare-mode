@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-12 09:06:47 marco>
+;; Time-stamp: <2015-03-20 09:54:08 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -598,6 +598,16 @@ in the Scheme mode hook."
     (eval-for-expand					. 0)
     (fluid-let-syntax					. 1)
     (format						. 1)
+    (hashtable-for-each-entry				. 1)
+    (hashtable-for-each-key				. 1)
+    (hashtable-for-all-keys				. 1)
+    (hashtable-for-all-entries				. 1)
+    (hashtable-exists-key				. 1)
+    (hashtable-exists-entry				. 1)
+    (hashtable-find-key					. 1)
+    (hashtable-find-entry				. 1)
+    (hashtable-fold-keys				. 1)
+    (hashtable-fold-entries				. 1)
     (make-parameter					. 1)
     (module						. 1)
     (monitor						. 1)
