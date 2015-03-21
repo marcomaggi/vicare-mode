@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-20 09:54:01 marco>
+;; Time-stamp: <2015-03-21 06:32:00 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1151,6 +1151,8 @@ language built ins.")
     "guarded-strdup*"
     "guarded-strndup"
     "guarded-strndup*"
+    "hashtable-map-keys"
+    "hashtable-map-entries"
     "hashtable-for-each-entry"
     "hashtable-for-each-key"
     "hashtable-for-all-keys"
