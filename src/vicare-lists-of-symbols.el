@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-23 10:13:45 marco>
+;; Time-stamp: <2015-03-23 10:50:47 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -972,6 +972,7 @@ language built ins.")
     "bytevector->memory"
     "bytevector->memory*"
     "bytevector-port-buffer-size"
+    "bytevector-concatenate"
     "bytevector-reverse-and-concatenate"
     "bytevector->s16b-list"
     "bytevector->s16l-list"
