@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-23 10:50:47 marco>
+;; Time-stamp: <2015-03-23 12:24:33 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1708,6 +1708,8 @@ language built ins.")
     "bytevector-index-for-word16?"
     "bytevector-index-for-word32?"
     "bytevector-index-for-word64?"
+    "bytevector-index-for-single-flonum?"
+    "bytevector-index-for-double-flonum?"
     "bytevector-start-index-and-count-for-word?"
     "bytevector-start-index-and-count-for-word8?"
     "bytevector-start-index-and-count-for-word16?"
