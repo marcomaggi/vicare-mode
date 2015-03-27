@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-27 09:31:01 marco>
+;; Time-stamp: <2015-03-27 12:07:11 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1011,6 +1011,8 @@ language built ins.")
     "calloc*"
     "cbrt"
     "cflonum?"
+    "chmax"
+    "chmin"
     "code?"
     "collect"
     "collection-avoidance-list"
