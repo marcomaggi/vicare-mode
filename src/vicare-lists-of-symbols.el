@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-27 08:33:05 marco>
+;; Time-stamp: <2015-03-27 09:01:41 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1196,6 +1196,7 @@ language built ins.")
     "library"
     "list-of-bytevectors?"
     "list-of-chars?"
+    "list-of-fixnums?"
     "list-of-flonums?"
     "list-of-strings?"
     "list-of-symbols?"
