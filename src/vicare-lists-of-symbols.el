@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-27 09:01:41 marco>
+;; Time-stamp: <2015-03-27 09:31:01 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1125,6 +1125,7 @@ language built ins.")
     "fxmodulo"
     "fxnonnegative?"
     "fxnonpositive?"
+    "non-zero-fixnum?"
     "positive-fixnum?"
     "negative-fixnum?"
     "non-negative-fixnum?"
