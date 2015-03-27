@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-27 12:07:11 marco>
+;; Time-stamp: <2015-03-27 12:27:49 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1463,6 +1463,9 @@ language built ins.")
     "strdup"
     "strdup*"
     "strerror"
+    "strmax"
+    "strmin"
+    "string!=?"
     "string-empty?"
     "string-base64->bytevector"
     "string-copy!"
