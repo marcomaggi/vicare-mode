@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-27 12:27:49 marco>
+;; Time-stamp: <2015-03-28 07:29:36 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -710,6 +710,8 @@ language keywords.")
     "symbol->string"
     "symbol-hash"
     "symbol=?"
+    "symbol-max"
+    "symbol-min"
     "symbol?"
     "syntax->datum"
     "syntax-violation"
@@ -1463,8 +1465,8 @@ language built ins.")
     "strdup"
     "strdup*"
     "strerror"
-    "strmax"
-    "strmin"
+    "string-max"
+    "string-min"
     "string!=?"
     "string-empty?"
     "string-base64->bytevector"
@@ -1523,6 +1525,7 @@ language built ins.")
     "symbol-bound?"
     "symbol->keyword"
     "symbol-value"
+    "symbol!=?"
     "symbol<?"
     "symbol<=?"
     "symbol>?"
