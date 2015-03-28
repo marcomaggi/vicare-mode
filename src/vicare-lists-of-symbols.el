@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-28 07:29:36 marco>
+;; Time-stamp: <2015-03-28 08:06:06 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -945,6 +945,14 @@ language built ins.")
     "base64->bytevector"
     "bignum?"
     "bignum->bytevector"
+    "list-of-booleans?"
+    "boolean!=?"
+    "boolean<?"
+    "boolean>?"
+    "boolean<=?"
+    "boolean>=?"
+    "boolean-min"
+    "boolean-max"
     "bwp-object?"
     "bwp-object"
     "bytevector-append"
