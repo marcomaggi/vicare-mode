@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-28 09:13:19 marco>
+;; Time-stamp: <2015-03-29 10:47:31 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -945,7 +945,6 @@ language built ins.")
     "base64->bytevector"
     "bignum?"
     "bignum->bytevector"
-    "list-of-booleans?"
     "boolean!=?"
     "boolean<?"
     "boolean>?"
@@ -1088,6 +1087,10 @@ language built ins.")
     "positive-exact-integer?"
     "non-negative-exact-integer?"
     "non-positive-exact-integer?"
+    "dlopen"
+    "dlclose"
+    "dlerror"
+    "dlsym"
     "exit-hooks"
     "expand-form-to-core-language"
     "expand-library"
@@ -1220,12 +1223,14 @@ language built ins.")
     "keyword->string"
     "last-pair"
     "library"
+    "list-of-booleans?"
     "list-of-bytevectors?"
     "list-of-chars?"
     "list-of-fixnums?"
     "list-of-flonums?"
     "list-of-strings?"
     "list-of-symbols?"
+    "list-of-pointers?"
     "load"
     "lookahead-two-u8"
     "machine-word->integer"
@@ -1241,6 +1246,10 @@ language built ins.")
     "make-binary-socket-output-port*"
     "make-binary-socket-input/output-port"
     "make-binary-socket-input/output-port*"
+    ;;"make-c-callout-maker"
+    ;;"make-c-callout-maker/with-errno"
+    ;;"make-c-callback-maker"
+    ;;"free-c-callback"
     "make-compile-time-value"
     "compile-time-value?"
     "compile-time-value-object"
@@ -1319,6 +1328,8 @@ language built ins.")
     "pointer=?"
     "pointer>=?"
     "pointer>?"
+    "pointer-min"
+    "pointer-max"
     "pointer?"
     "pointer-add"
     "pointer-and-offset?"
@@ -1326,6 +1337,7 @@ language built ins.")
     "pointer-diff"
     "pointer->integer"
     "pointer-null?"
+    "pointer-non-null?"
     "pointer-ref-c-double"
     "pointer-ref-c-float"
     "pointer-ref-c-off_t"
