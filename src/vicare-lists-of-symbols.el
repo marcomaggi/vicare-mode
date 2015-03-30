@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-29 10:47:31 marco>
+;; Time-stamp: <2015-03-30 08:15:13 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1087,10 +1087,10 @@ language built ins.")
     "positive-exact-integer?"
     "non-negative-exact-integer?"
     "non-positive-exact-integer?"
-    "dlopen"
-    "dlclose"
-    "dlerror"
-    "dlsym"
+    ;; "dlopen"
+    ;; "dlclose"
+    ;; "dlerror"
+    ;; "dlsym"
     "exit-hooks"
     "expand-form-to-core-language"
     "expand-library"
@@ -1246,10 +1246,10 @@ language built ins.")
     "make-binary-socket-output-port*"
     "make-binary-socket-input/output-port"
     "make-binary-socket-input/output-port*"
-    ;;"make-c-callout-maker"
-    ;;"make-c-callout-maker/with-errno"
-    ;;"make-c-callback-maker"
-    ;;"free-c-callback"
+    ;; "make-c-callout-maker"
+    ;; "make-c-callout-maker/with-errno"
+    ;; "make-c-callback-maker"
+    ;; "free-c-callback"
     "make-compile-time-value"
     "compile-time-value?"
     "compile-time-value-object"
