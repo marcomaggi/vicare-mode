@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-03-30 08:15:13 marco>
+;; Time-stamp: <2015-04-12 07:54:58 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1816,8 +1816,11 @@ language built ins.")
     "object-type-spec-parent-spec"
     "object-type-spec-ancestry"
 
-    "set-predicate-procedure-argument-validation!"
-    "set-predicate-return-value-validation!"
+    ;; "set-predicate-assertion-procedure-argument-validation!"
+    ;; "predicate-assertion-procedure-argument-validation"
+    ;; "set-predicate-assertion-return-value-validation!"
+    ;; "predicate-assertion-return-value-validation"
+
     "set-identifier-unsafe-variant!"
 
     "tagged-identifier-syntax?"
