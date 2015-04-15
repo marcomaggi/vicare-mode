@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-04-12 07:54:58 marco>
+;; Time-stamp: <2015-04-15 09:19:36 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -795,6 +795,8 @@ language built ins.")
     "match"
     "with-arguments-validation" "with-implicits"
     "begin-for-syntax" "eval-for-expand" "splice-first-expand"
+
+    "unsafe"
 
     "infix" "++" "--" "pre-incr!" "pre-decr!" "post-incr!" "post-decr!"
     "try" "catch" "finally"

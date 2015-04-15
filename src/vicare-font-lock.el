@@ -292,6 +292,18 @@
 
 ;;; --------------------------------------------------------------------
 
+(defface vicare-non-validating-identifier-face
+  `((t (:foreground "pink")))
+  "Scheme mode custom face used for unquoted symbols."
+  :group 'scheme
+  :group 'custom-faces)
+
+(defconst vicare-non-validating-identifier-face
+  'vicare-non-validating-identifier-face
+  "Scheme mode custom face used for identifiers of non-validating bindings.")
+
+;;; --------------------------------------------------------------------
+
 (defface vicare-pattern-variable-face
   `((t (:foreground "gold")))
   "Scheme mode custom face for syntax pattern variables."
@@ -337,6 +349,11 @@
   (eval-when-compile
     (concat "\\$" vicare-identifier-internal-rex))
   "Regexp to match Scheme language unsafe binding identifiers.")
+
+(defconst vicare-non-validating-identifier-rex
+  (eval-when-compile
+    (concat "\\~" vicare-identifier-internal-rex))
+  "Regexp to match Scheme language non-validating binding identifiers.")
 
 (defconst vicare-unquoted-identifier-rex
   (eval-when-compile
@@ -661,6 +678,7 @@ symbols and symbols whose name starts with a colon.")
     (,vicare-quoted-identifier-rex	. vicare-quoted-identifier-face)
     (,vicare-pattern-variable-rex	. vicare-pattern-variable-face)
     (,vicare-unsafe-identifier-rex	. vicare-unsafe-identifier-face)
+    (,vicare-non-validating-identifier-rex	. vicare-non-validating-identifier-face)
     (,vicare-constant-rex		0 font-lock-constant-face t)
     (,vicare-conditions-rex		0 vicare-language-conditions-face)
     ;;This one has a regexp pattern including the open paren, so we must
