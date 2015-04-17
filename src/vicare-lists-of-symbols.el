@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-04-16 15:15:23 marco>
+;; Time-stamp: <2015-04-17 08:13:43 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1566,10 +1566,10 @@ language built ins.")
     "symbol>=?"
     "syntax-object?"
     "stx?"
-    "stx-expression"
-    "stx-marks"
-    "stx-source-objects"
-    "stx-ribs"
+    "stx-expr"
+    "stx-mark*"
+    "stx-rib*"
+    "stx-annotated-expr*"
     "syntax-transpose"
     "system-value"
     "system-value-gensym"
