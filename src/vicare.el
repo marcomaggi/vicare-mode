@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-05-02 08:12:19 marco>
+;; Time-stamp: <2015-05-03 08:39:02 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -699,7 +699,7 @@ in the Scheme mode hook."
     (open-file-input-port				. 1)
     (raise-non-continuable-standard-condition		. 1)
     (procedure-argument-violation			. 1)
-    (procedure-argument-consistency-violation		. 1)
+    (procedure-arguments-consistency-violation		. 1)
     (r6.make-token-lexer				. 1)
     (rec						. 1)
     (receive-and-return					. 2)
