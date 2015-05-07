@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-05-06 09:39:43 marco>
+;; Time-stamp: <2015-05-07 15:38:09 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -584,6 +584,7 @@ in the Scheme mode hook."
     (check-for-expression-return-value-violation	. 1)
     (check-for-procedure-argument-violation		. 1)
     (check-for-procedure-signature-argument-violation	. 1)
+    (check-for-procedure-signature-return-value-violation . 1)
     (check-for-procedure-argument-consistency-violation	. 1)
     (compensate						. vicare-indent-compensate)
     (coroutine						. 1)
@@ -701,6 +702,7 @@ in the Scheme mode hook."
     (raise-non-continuable-standard-condition		. 1)
     (procedure-argument-violation			. 1)
     (procedure-signature-argument-violation		. 1)
+    (procedure-signature-return-value-violation		. 1)
     (procedure-arguments-consistency-violation		. 1)
     (r6.make-token-lexer				. 1)
     (rec						. 1)
