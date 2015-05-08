@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-05-07 15:38:09 marco>
+;; Time-stamp: <2015-05-08 05:50:47 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -581,6 +581,7 @@ in the Scheme mode hook."
     (case-lambda*					. 0)
     (check						. 1)
     (check-ec						. 2)
+    (check-for-assertion-violation			. 1)
     (check-for-expression-return-value-violation	. 1)
     (check-for-procedure-argument-violation		. 1)
     (check-for-procedure-signature-argument-violation	. 1)
