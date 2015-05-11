@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-05-11 08:47:25 marco>
+;; Time-stamp: <2015-05-11 15:46:25 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1251,9 +1251,10 @@ language built ins.")
     ;; "make-c-callout-maker/with-errno"
     ;; "make-c-callback-maker"
     ;; "free-c-callback"
-    "make-compile-time-value"
-    "compile-time-value?"
-    "compile-time-value-object"
+    "make-expand-time-value"
+    "expand-time-value?"
+    "expand-time-value-object"
+    ;;"retrieve-expand-time-value"
     "make-synonym-transformer"
     "synonym-transformer?"
     "synonym-transformer-identifier"
