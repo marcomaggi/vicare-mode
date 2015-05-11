@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-04-17 08:13:43 marco>
+;; Time-stamp: <2015-05-11 08:47:25 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1097,8 +1097,8 @@ language built ins.")
     "expand-form-to-core-language"
     "expand-library"
     "expand-library->sexp"
-    "expand-top-level"
-    "expand-top-level->sexp"
+    "expand-r6rs-top-level-program"
+    "expand-r6rs-top-level-program->sexp"
     "f4b-list->bytevector"
     "f4l-list->bytevector"
     "f4n-list->bytevector"
