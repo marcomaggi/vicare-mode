@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-05-17 10:31:38 marco>
+;; Time-stamp: <2015-05-18 20:44:15 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1968,7 +1968,7 @@ language built ins.")
     "library-vis-lib*"
     "library-inv-lib*"
     "library-export-subst"
-    "library-export-env"
+    "library-global-env"
     "library-visit-state"
     "library-invoke-state"
     "library-visit-code"
