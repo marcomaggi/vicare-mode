@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-05-18 20:44:15 marco>
+;; Time-stamp: <2015-05-19 17:09:28 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -111,7 +111,7 @@
     "guard" "if" "or" "and"
     "import" "lambda" "let" "let*" "let*-values"
     "let-syntax" "let-values" "letrec" "letrec*" "letrec-syntax"
-    "library"
+    "library" "program"
     "quasiquote" "quasisyntax" "quote"
     "set!" "syntax"
     "syntax-case" "syntax-rules" "unquote"
@@ -1099,8 +1099,8 @@ language built ins.")
     "expand-form-to-core-language"
     "expand-library"
     "expand-library->sexp"
-    "expand-r6rs-top-level-program"
-    "expand-r6rs-top-level-program->sexp"
+    "expand-top-level-program"
+    "expand-top-level-program->sexp"
     "f4b-list->bytevector"
     "f4l-list->bytevector"
     "f4n-list->bytevector"
