@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-05-08 05:50:47 marco>
+;; Time-stamp: <2015-05-19 16:25:37 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -148,7 +148,7 @@ For details on how to use it see `imenu-generic-expression'.")
 \
 ;;;; done
 
-\#| end of library |\#)
+\#| end of library |\# )
 
 ;;; end of file
 ;; Local Variables:
@@ -560,6 +560,7 @@ in the Scheme mode hook."
     (map				. 1)
     (memp				. 1)
     (partition				. 1)
+    (program				. 1)
     (remp				. 1)
     (syntax-case			. 2)
     (syntax-rules			. 1)
