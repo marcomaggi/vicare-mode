@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-05-19 17:09:28 marco>
+;; Time-stamp: <2015-05-25 16:50:24 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -808,7 +808,7 @@ language built ins.")
     "with-blocked-exceptions" "with-current-dynamic-environment"
 
     "for" "only" "except" "rename" "prefix" "deprefix"
-    "export" "options"
+    "export" "options" "foreign-library"
 
     ;;These definition syntaxes are to be handled separately.
     ;;
