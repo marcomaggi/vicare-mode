@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-05-25 16:50:24 marco>
+;; Time-stamp: <2015-05-28 07:35:38 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1335,6 +1335,8 @@ language built ins.")
     "pointer-min"
     "pointer-max"
     "pointer?"
+    ;; "maybe-pointer?"
+    ;; "false-or-pointer?"
     "pointer-add"
     "pointer-and-offset?"
     "pointer-clone"
