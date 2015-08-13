@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-05-28 07:35:38 marco>
+;; Time-stamp: <2015-08-13 18:55:41 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -780,7 +780,7 @@ language built ins.")
     "let*-values" "let*-syntax"
     "let-constants" "let*-constants" "letrec-constants" "letrec*-constants"
     "stale-when" "foreign-call" "case-identifiers"
-    "for-each-in-order" "internal-body"
+    "internal-body"
     "internal-define" "internal-lambda" "internal-case-lambda"
     "returnable"
     "cond-expand"
@@ -1138,6 +1138,7 @@ language built ins.")
     "fltanh"
     "flzero?/negative"
     "flzero?/positive"
+    "for-each-in-order"
     "forget-to-avoid-collecting"
     "format"
     "fprintf"
