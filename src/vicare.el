@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-05-19 16:25:37 marco>
+;; Time-stamp: <2015-08-28 07:40:50 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -719,6 +719,10 @@ in the Scheme mode hook."
     (set-predicate-return-value-validation!		. 1)
     (set-rtd-printer!					. 1)
     (set-rtd-destructor!				. 1)
+    (set-struct-type-printer!				. 1)
+    (set-record-type-printer!				. 1)
+    (set-struct-type-destructor!			. 1)
+    (set-record-type-destructor!			. 1)
     (stale-when						. 1)
     (string-for-each					. 1)
     (string-map						. 1)
