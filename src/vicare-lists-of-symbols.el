@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-08-13 18:55:41 marco>
+;; Time-stamp: <2015-09-03 17:40:30 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -102,6 +102,7 @@
 
 (defconst vicare-r6rs-keywords-list
   '("apply" "assert" "begin" "case" "case-lambda" "cond" "endianness"
+    "delay"
     ;;Keywords starting with "define" should be handled separately.
     ;;
     ;; "define" "define-condition-type" "define-enumeration"
@@ -303,7 +304,6 @@ language keywords.")
     "current-input-port"
     "current-output-port"
     "datum->syntax"
-    "delay"
     "delete-file"
     "denominator"
     "display"
