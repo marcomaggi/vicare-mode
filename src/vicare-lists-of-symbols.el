@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-03 17:40:30 marco>
+;; Time-stamp: <2015-09-05 07:18:32 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -785,6 +785,8 @@ language built ins.")
     "returnable"
     "cond-expand"
     "do*" "dolist" "dotimes"
+
+    "new" "delete"
 
     "expander-options" "compiler-options"
 
@@ -2110,7 +2112,7 @@ language built ins.")
     "any" "append" "append!" "append-map" "append-map!"
     "append-reverse" "append-reverse!" "assoc" "assq" "assv"
     "break" "break!" "car+cdr" "circular-list" "circular-list?"
-    "concatenate" "concatenate!" "cons" "cons*" "count" "delete"
+    "concatenate" "concatenate!" "cons" "cons*" "count" ;;"delete"
     "delete!" "delete-duplicates" "delete-duplicates!" "dotted-list?"
     "drop" "drop-right" "drop-right!" "drop-while" "eighth" "every"
     "fifth" "filter!" "filter-map" "find" "find-tail"
