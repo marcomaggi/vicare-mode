@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-05 07:18:32 marco>
+;; Time-stamp: <2015-09-09 09:14:33 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -785,6 +785,7 @@ language built ins.")
     "returnable"
     "cond-expand"
     "do*" "dolist" "dotimes"
+    "destructor-protocol"
 
     "new" "delete"
 
