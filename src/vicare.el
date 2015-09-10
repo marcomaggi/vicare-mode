@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-09 09:15:12 marco>
+;; Time-stamp: <2015-09-10 09:30:39 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -591,6 +591,7 @@ in the Scheme mode hook."
     (check-for-procedure-argument-consistency-violation	. 1)
     (compensate						. vicare-indent-compensate)
     (coroutine						. 1)
+    (custom-printer					. 0)
     (define-condition					. 1)
     (define-maker					. 2)
     (define-syntax*					. 1)
