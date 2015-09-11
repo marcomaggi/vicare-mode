@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-10 09:30:39 marco>
+;; Time-stamp: <2015-09-11 15:24:21 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -695,6 +695,7 @@ in the Scheme mode hook."
     (match-define*					. 1)
     (match-let						. 1)
     (match-let*						. 1)
+    (method-call					. 1)
     (mk.define-maker					. 2)
     (unwinding-call/cc					. 1)
 

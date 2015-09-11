@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-10 09:30:25 marco>
+;; Time-stamp: <2015-09-11 15:23:06 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -822,7 +822,7 @@ language built ins.")
 
     "lambda*" "case-lambda*"
 
-    "type-descriptor" "is-a?" "slot-set!" "slot-ref"
+    "type-descriptor" "is-a?" "slot-set!" "slot-ref" "method-call"
     "condition-is-a?"
 
     "tag-predicate"
