@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-11 15:23:06 marco>
+;; Time-stamp: <2015-09-12 20:12:25 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -785,7 +785,7 @@ language built ins.")
     "returnable"
     "cond-expand"
     "do*" "dolist" "dotimes"
-    "destructor-protocol" "custom-printer"
+    "destructor-protocol" "custom-printer" "method" "case-method"
 
     "new" "delete"
 
@@ -2093,7 +2093,7 @@ language built ins.")
     ;;
     ;; "define-class" "define-label" "define-builtin-label" "define-mixin"
     ;; "define/tags" "case-define/tags"
-    "abstract" "virtual-fields" "methods" "method" "method-syntax" "maker" "mixins"
+    "abstract" "virtual-fields" "methods" "method-syntax" "maker" "mixins"
     "predicate" "setter" "getter" "public-protocol" "super-protocol"
     "shadows"
     "make-from-fields"
