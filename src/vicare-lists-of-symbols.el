@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-12 20:12:25 marco>
+;; Time-stamp: <2015-09-13 06:18:57 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -782,12 +782,13 @@ language built ins.")
     "stale-when" "foreign-call" "case-identifiers"
     "internal-body"
     "internal-define" "internal-lambda" "internal-case-lambda"
-    "returnable"
+    "returnable" "infix"
     "cond-expand"
     "do*" "dolist" "dotimes"
-    "destructor-protocol" "custom-printer" "method" "case-method"
 
-    "new" "delete"
+    ;;Additional clauses for DEFINE-RECORD-TYPE.
+    "destructor-protocol" "custom-printer" "super-protocol"
+    "method" "case-method"
 
     "expander-options" "compiler-options"
 
@@ -822,8 +823,9 @@ language built ins.")
 
     "lambda*" "case-lambda*"
 
+    ;; generic syntaxes for typed values
     "type-descriptor" "is-a?" "slot-set!" "slot-ref" "method-call"
-    "condition-is-a?"
+    "condition-is-a?" "new" "delete"
 
     "tag-predicate"
     "tag-procedure-argument-validator" "tag-return-value-validator"
@@ -2094,11 +2096,10 @@ language built ins.")
     ;; "define-class" "define-label" "define-builtin-label" "define-mixin"
     ;; "define/tags" "case-define/tags"
     "abstract" "virtual-fields" "methods" "method-syntax" "maker" "mixins"
-    "predicate" "setter" "getter" "public-protocol" "super-protocol"
+    "predicate" "setter" "getter" "public-protocol"
     "shadows"
     "make-from-fields"
-    "with-namespace" "using"
-    "infix")
+    "with-namespace" "using")
   "List of syntax identifiers from some Nausicaa libraries.")
 
 (defconst vicare-nausicaa-functions-list
