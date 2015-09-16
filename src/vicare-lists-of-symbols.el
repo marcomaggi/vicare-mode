@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-13 06:18:57 marco>
+;; Time-stamp: <2015-09-16 10:23:55 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -877,7 +877,7 @@ language built ins.")
     "?" ":" "!" "%" "&" "^" "~" "<<" ">>" "⏐" "⏐⏐" "¦" "¦¦" "**" "=="
     "∧" "∨" "⊻" "¬" "×" "≠" "⋅"
     "brace" "return" "continue" "break" "with"
-    "visit-upon-loading" "tagged-language" "strict-r6rs"
+    "visit-upon-loading" "typed-language" "strict-r6rs"
     "stdin" "stdout" "stderr")
   "List of auxiliary syntaxes from the Vicare libraries.")
 
@@ -2020,8 +2020,8 @@ language built ins.")
     "current-include-file-locator"
     "current-include-file-loader"
 
-    "enable-tagged-language"
-    "disable-tagged-language"
+    "enable-typed-language"
+    "disable-typed-language"
 
     "map1" "for-each1" "for-all1" "exists1"
 
