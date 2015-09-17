@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-16 10:23:55 marco>
+;; Time-stamp: <2015-09-17 11:58:42 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -825,7 +825,7 @@ language built ins.")
 
     ;; generic syntaxes for typed values
     "type-descriptor" "is-a?" "slot-set!" "slot-ref" "method-call"
-    "condition-is-a?" "new" "delete"
+    "unsafe-cast" "new" "delete"
 
     "tag-predicate"
     "tag-procedure-argument-validator" "tag-return-value-validator"
