@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-13 15:32:24 marco>
+;; Time-stamp: <2015-09-18 07:16:04 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -581,6 +581,8 @@ in the Scheme mode hook."
     (case-define*					. 1)
     (case-endianness					. 1)
     (case-lambda*					. 0)
+    (named-case-lambda					. 1)
+    (named-case-lambda*					. 1)
     (check						. 1)
     (check-ec						. 2)
     (check-for-assertion-violation			. 1)
@@ -603,6 +605,8 @@ in the Scheme mode hook."
     (internal-body					. 0)
     (internal-define					. 2)
     (lambda*						. 1)
+    (named-lambda*					. 2)
+    (named-lambda					. 2)
     (eval-for-expand					. 0)
     (fluid-let-syntax					. 1)
     (format						. 1)
