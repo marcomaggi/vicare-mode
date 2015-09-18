@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-18 07:16:04 marco>
+;; Time-stamp: <2015-09-18 09:17:03 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -604,6 +604,7 @@ in the Scheme mode hook."
     (inherit						. 1)
     (internal-body					. 0)
     (internal-define					. 2)
+    (internal-lambda					. 2)
     (lambda*						. 1)
     (named-lambda*					. 2)
     (named-lambda					. 2)
