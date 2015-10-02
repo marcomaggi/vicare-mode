@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-09-18 09:17:03 marco>
+;; Time-stamp: <2015-10-02 07:48:17 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -634,6 +634,7 @@ in the Scheme mode hook."
     (recursion						. 1)
     (receive						. 2)
     (returnable						. 0)
+    (record-type-printer-set!				. 1)
     (super-protocol					. 0)
     (try						. 1)
     (unwind-protect					. 1)
