@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-10-17 07:06:38 marco>
+;; Time-stamp: <2015-10-12 16:01:06 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -831,7 +831,7 @@ language built ins.")
     "validate-typed-return-value"
     "assert-signature"
     "assert-signature-and-return"
-    "type-identifier-super-and-sub?" "type-signature-super-and-sub?"
+    "type-super-and-sub?"
 
     "make-parameter" "parametrise" "parameterise" "parameterize"
 
