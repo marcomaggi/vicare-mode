@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-10-02 07:48:17 marco>
+;; Time-stamp: <2015-10-19 11:47:08 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -138,6 +138,7 @@ For details on how to use it see `imenu-generic-expression'.")
 \
 \#!r6rs
 \(library \(name\)
+  \(options typed-language\)
   \(export\)
   \(import \(vicare\)\)
 
@@ -163,9 +164,11 @@ For details on how to use it see `imenu-generic-expression'.")
   "
 
 \
-\#!r6rs
-\(import \(vicare\)
-  \(vicare checks\)\)
+\#!vicare
+\(program \(test\)
+  \(options typed-language\)
+  \(import \(vicare\)
+    \(vicare checks\)\)
 
 \(check-set-mode! 'report-failed\)
 \(check-display \"*** testing Vicare libraries: stuff\\n\"\)
@@ -184,6 +187,8 @@ For details on how to use it see `imenu-generic-expression'.")
 ;;;; done
 
 \(check-report\)
+
+#| end of program |# \)
 
 ;;; end of file
 ;; Local Variables:
