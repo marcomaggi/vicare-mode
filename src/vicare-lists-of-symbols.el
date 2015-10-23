@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-10-17 07:17:23 marco>
+;; Time-stamp: <2015-10-23 10:44:00 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -810,6 +810,8 @@ language built ins.")
     "unwind-protect" "with-unwind-protection" "with-unwind-handler"
     "with-escape-handlers-stack" "with-escape-handler" "run-escape-handlers"
     "with-blocked-exceptions" "with-current-dynamic-environment"
+
+    "shift" "reset"
 
     "for" "only" "except" "rename" "prefix" "deprefix"
     "export" "options" "foreign-library"
