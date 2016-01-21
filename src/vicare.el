@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-01-21 08:20:17 marco>
+;; Time-stamp: <2016-01-21 09:04:05 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -77,6 +77,8 @@ The point is repositioned to the starting point."
 
     ;; (define           (the-func ---) ---)
     ;; (define*          (the-func ---) ---)
+    ;; (define/typed     (the-func ---) ---)
+    ;; (define/standard  (the-func ---) ---)
     ;; (define-generic   (the-func ---) ---)
     ;; (define-method    (the-func ---) ---)
     ;;
@@ -85,7 +87,7 @@ The point is repositioned to the starting point."
     ;; (define-generic   the-thing ---)
     ;; (define-method    the-thing ---)
     (nil
-     "^(define\\(\\|\\*\\|-\\(generic\\|method\\)\\)*\\s-+(?\\(\\sw+\\)" 3)
+     "^(define\\(\\|\\*\\|/standard\\|/typed\\|-\\(generic\\|method\\)\\)*\\s-+(?\\(\\sw+\\)" 3)
 
     ;; (define-constant		the-thing ---)
     ;; (define-inline-constant	the-thing ---)
@@ -94,8 +96,10 @@ The point is repositioned to the starting point."
 
     ;; (case-define the-func ---)
     ;; (case-define* the-func ---)
+    ;; (case-define/standard the-func ---)
+    ;; (case-define/typed the-func ---)
     (nil
-     "^(case-define\\(\\|\\*\\)\\s-+\\(\\sw+\\)" 2)
+     "^(case-define\\(\\|\\*\\|/standard\\|/define\\)\\s-+\\(\\sw+\\)" 2)
 
 ;;; types, labels and classes
 
@@ -584,10 +588,14 @@ in the Scheme mode hook."
     (begin-for-syntax					. 0)
     (catch						. 1)
     (case-define					. 1)
+    (case-define/standard				. 1)
+    (case-define/typed					. 1)
     (case-define*					. 1)
     (case-endianness					. 1)
     (case-lambda*					. 0)
     (named-case-lambda					. 1)
+    (named-case-lambda/standard				. 1)
+    (named-case-lambda/typed				. 1)
     (named-case-lambda*					. 1)
     (case-type						. 1)
     (check						. 1)
@@ -618,6 +626,8 @@ in the Scheme mode hook."
     (lambda*						. 1)
     (named-lambda*					. 2)
     (named-lambda					. 2)
+    (named-lambda/standard				. 2)
+    (named-lambda/typed					. 2)
     (eval-for-expand					. 0)
     (fluid-let-syntax					. 1)
     (format						. 1)
