@@ -1,10 +1,10 @@
 ;;; vicare.el --- Vicare Scheme major mode
 
-;; Copyright (C) 2013, 2014, 2015 Marco Maggi
+;; Copyright (C) 2013, 2014, 2015, 2016 Marco Maggi
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-11-04 08:24:54 marco>
+;; Time-stamp: <2016-01-21 08:20:17 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -611,7 +611,10 @@ in the Scheme mode hook."
     (inherit						. 1)
     (internal-body					. 0)
     (internal-define					. 2)
-    (internal-lambda					. 2)
+    (define/standard					. 1)
+    (define/typed					. 1)
+    (lambda/standard					. 1)
+    (lambda/typed					. 1)
     (lambda*						. 1)
     (named-lambda*					. 2)
     (named-lambda					. 2)

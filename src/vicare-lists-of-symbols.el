@@ -1,10 +1,10 @@
 ;;; vicare-lists-of-symbols.el --- definition of lists of symbols for the Scheme language
 
-;; Copyright (C) 2013, 2014, 2015 Marco Maggi
+;; Copyright (C) 2013, 2014, 2015, 2016 Marco Maggi
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2015-11-04 08:24:11 marco>
+;; Time-stamp: <2016-01-21 08:19:09 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -781,7 +781,8 @@ language built ins.")
     "let-constants" "let*-constants" "letrec-constants" "letrec*-constants"
     "stale-when" "foreign-call" "case-identifiers"
     "internal-body"
-    "internal-define" "internal-lambda" "internal-case-lambda"
+    "define/standard" "define/typed"
+    "lambda/standard" "lambda/typed"
     "returnable" "infix"
     "cond-expand"
     "do*" "dolist" "dotimes"
