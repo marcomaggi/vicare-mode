@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-01-21 08:27:51 marco>
+;; Time-stamp: <2016-02-02 07:20:39 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -825,9 +825,10 @@ language built ins.")
     ;; "define-inline" "define-constant"
     ;; "define-values" "define-constant-values"
 
-    "lambda*" "case-lambda*" "named-lambda*" "named-case-lambda*"
+    "case-lambda/standard" "case-lambda/typed"
     "named-lambda" "named-lambda/standard" "named-lambda/typed"
     "named-case-lambda" "named-case-lambda/standard" "named-case-lambda/typed"
+    "lambda*" "case-lambda*" "named-case-lambda*" "named-lambda*"
 
     ;; generic syntaxes for typed values
     "type-descriptor" "is-a?" "slot-set!" "slot-ref" "method-call"

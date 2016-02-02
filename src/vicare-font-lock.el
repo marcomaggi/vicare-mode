@@ -1,7 +1,7 @@
 ;;; vicare-font-lock.el --- custom font locking for Scheme mode
 
 ;;Copyright (C) 2008, 2009, 2010, 2011, 2012,
-;;   2013, 2014, 2015 Marco Maggi <marco.maggi-ipsu@poste.it>
+;;   2013, 2014, 2015, 2016 Marco Maggi <marco.maggi-ipsu@poste.it>
 ;;Copyright (C) 1986, 1987, 1988, 1997, 1998,
 ;;   2001, 2002, 2003, 2004, 2005, 2006, 2007,
 ;;   2008  Free Software Foundation, Inc.
