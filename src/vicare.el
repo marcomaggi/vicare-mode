@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-01-21 09:04:05 marco>
+;; Time-stamp: <2016-02-08 07:50:11 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -592,6 +592,9 @@ in the Scheme mode hook."
     (case-define/typed					. 1)
     (case-define*					. 1)
     (case-endianness					. 1)
+    (case-lambda					. 0)
+    (case-lambda/standard				. 0)
+    (case-lambda/typed					. 0)
     (case-lambda*					. 0)
     (named-case-lambda					. 1)
     (named-case-lambda/standard				. 1)
