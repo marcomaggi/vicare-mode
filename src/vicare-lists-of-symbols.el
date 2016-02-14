@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-02-14 07:25:43 marco>
+;; Time-stamp: <2016-02-14 10:04:00 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -791,7 +791,7 @@ language built ins.")
     "super-protocol" "destructor-protocol"
     "custom-predicate" "custom-printer"
     "method" "case-method"
-    "define-type-descriptors"
+    "define-type-descriptors" "strip-angular-parentheses"
 
     "expander-options" "compiler-options"
 
