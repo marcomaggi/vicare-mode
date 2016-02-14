@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-02-08 07:50:11 marco>
+;; Time-stamp: <2016-02-14 07:26:54 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -537,6 +537,8 @@ in the Scheme mode hook."
 
 (defconst vicare-indent-r6rs
   '((assertion-violation		. 1)
+    (assert-signature			. 1)
+    (assert-signature-and-return	. 1)
     (assp				. 1)
     (call-with-bytevector-output-port	. 1)
     (call-with-current-continuation	. 1)
@@ -769,6 +771,7 @@ in the Scheme mode hook."
     (trace-let						. 2)
     (trace-define					. 1)
     (tag-case						. 1)
+    (unsafe-cast-signature				. 1)
     (vector-and-fold-left				. 1)
     (vector-and-fold-left*				. 1)
     (vector-and-fold-left/stx				. 1)
