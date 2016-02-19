@@ -474,7 +474,7 @@
   `( ;;This does DEFINE and DEFINE-METHOD for function bindings only.
     (,(eval-when-compile
 	(concat "(\\s-*"
-		(regexp-opt '("define" "define/standard" "define/typed" "define-method") 'symbols)
+		(regexp-opt '("define" "define/std" "define/typed" "define-method") 'symbols)
 		"\\s-+(" ;any whitespace and open paren
 		"{?"	 ;optional open brace
 		"\\s-*"	 ;optional white space separator
@@ -497,7 +497,7 @@
     ;;tag the identifier.
     (,(eval-when-compile
 	(concat "(\\s-*"
-		(regexp-opt '("case-define" "case-define/standard" "case-define/typed"
+		(regexp-opt '("case-define" "case-define/std" "case-define/typed"
 			      "case-define*" "define*"
 			      "define-values" "define-constant-values"
 			      "define-inline"

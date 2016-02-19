@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-02-14 10:04:00 marco>
+;; Time-stamp: <2016-02-19 08:29:28 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -781,8 +781,8 @@ language built ins.")
     "let-constants" "let*-constants" "letrec-constants" "letrec*-constants"
     "stale-when" "foreign-call" "case-identifiers"
     "internal-body"
-    "define/standard" "define/typed"
-    "lambda/standard" "lambda/typed"
+    "define/std" "define/typed"
+    "lambda/std" "lambda/typed"
     "returnable" "infix"
     "cond-expand"
     "do*" "dolist" "dotimes"
@@ -826,9 +826,9 @@ language built ins.")
     ;; "define-inline" "define-constant"
     ;; "define-values" "define-constant-values"
 
-    "case-lambda/standard" "case-lambda/typed"
-    "named-lambda" "named-lambda/standard" "named-lambda/typed"
-    "named-case-lambda" "named-case-lambda/standard" "named-case-lambda/typed"
+    "case-lambda/std" "case-lambda/typed"
+    "named-lambda" "named-lambda/std" "named-lambda/typed"
+    "named-case-lambda" "named-case-lambda/std" "named-case-lambda/typed"
     "lambda*" "case-lambda*" "named-case-lambda*" "named-lambda*"
 
     ;; generic syntaxes for typed values
