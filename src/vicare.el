@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-02-19 08:29:47 marco>
+;; Time-stamp: <2016-03-14 07:18:08 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -106,8 +106,9 @@ The point is repositioned to the starting point."
     ;; (define-label         <the-tag> ---)
     ;; (define-builtin-label <the-tag> ---)
     ;; (define-class         <the-tag> ---)
+    ;; (define-type          <the-tag> ---)
     ("Labels and Classes"
-     "^(define-\\(\\(\\(builtin-\\)?label\\)\\|class\\)\\s-+\\(\\sw+\\)" 4)
+     "^(define-\\(\\(\\(builtin-\\)?label\\)\\|class\\|type\\)\\s-+\\(\\sw+\\)" 4)
 
 ;;; syntax definitions
 
@@ -590,12 +591,12 @@ in the Scheme mode hook."
     (begin-for-syntax					. 0)
     (catch						. 1)
     (case-define					. 1)
-    (case-define/std				. 1)
+    (case-define/std					. 1)
     (case-define/typed					. 1)
     (case-define*					. 1)
     (case-endianness					. 1)
     (case-lambda					. 0)
-    (case-lambda/std				. 0)
+    (case-lambda/std					. 0)
     (case-lambda/typed					. 0)
     (case-lambda*					. 0)
     (named-case-lambda					. 1)
@@ -614,9 +615,9 @@ in the Scheme mode hook."
     (compensate						. vicare-indent-compensate)
     (coroutine						. 1)
     (custom-printer					. 0)
-    (define-condition					. 1)
     (define-maker					. 2)
     (define-syntax*					. 1)
+    (define-type					. 1)
     (destructor-protocol				. 0)
     (do*						. 2)
     (dolist						. 1)
