@@ -522,7 +522,8 @@
 			      "define-argument-validation"
 			      "define-auxiliary-syntaxes"
 			      "define-generic-definer" "define-generic*-definer"
-			      "define-generic" "define-generic*")
+			      "define-generic" "define-generic*"
+			      "define-type")
 			    'symbols)
 		"\\s-+(?" ;any whitespace and declared object
 		"(?"	  ;option open paren
