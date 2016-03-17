@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-03-16 08:29:28 marco>
+;; Time-stamp: <2016-03-17 10:19:52 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -573,6 +573,7 @@ language keywords.")
     "memq"
     "memv"
     "message-condition?"
+    "method-call-late-binding"
     "min"
     "mod"
     "mod0"
@@ -832,10 +833,9 @@ language built ins.")
     "lambda*" "case-lambda*" "named-case-lambda*" "named-lambda*"
 
     ;; generic syntaxes for typed values
-    "type-descriptor" "is-a?" "slot-set!" "slot-ref" "method-call"
+    "type-descriptor" "is-a?" "slot-set!" "slot-ref"
+    "method-call"
     "unsafe-cast-signature" "new" "delete" "case-type"
-    "validate-typed-procedure-argument"
-    "validate-typed-return-value"
     "assert-signature"
     "assert-signature-and-return"
     "type-super-and-sub?" "signature-super-and-sub?"
