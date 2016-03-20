@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-03-14 07:18:08 marco>
+;; Time-stamp: <2016-03-20 15:59:55 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -549,6 +549,7 @@ in the Scheme mode hook."
     (call-with-string-output-port	. 1)
     (call-with-values			. 1)
     (call/cc				. 1)
+    (condition				. 0)
     (define-condition-type		. 2)
     (error				. 1)
     (exists				. 1)
