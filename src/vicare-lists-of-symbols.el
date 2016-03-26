@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-03-17 10:19:52 marco>
+;; Time-stamp: <2016-03-26 07:59:57 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -834,10 +834,9 @@ language built ins.")
 
     ;; generic syntaxes for typed values
     "type-descriptor" "is-a?" "slot-set!" "slot-ref"
-    "method-call"
-    "unsafe-cast-signature" "new" "delete" "case-type"
-    "assert-signature"
-    "assert-signature-and-return"
+    "method-call" "new" "delete" "case-type"
+    "assert-signature" "assert-signature-and-return"
+    "cast-signature" "unsafe-cast-signature"
     "type-super-and-sub?" "signature-super-and-sub?"
 
     "make-parameter" "parametrise" "parameterise" "parameterize"
