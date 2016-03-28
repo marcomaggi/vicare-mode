@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-03-20 15:59:55 marco>
+;; Time-stamp: <2016-03-28 15:37:48 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -78,7 +78,8 @@ The point is repositioned to the starting point."
     ;; (define           (the-func ---) ---)
     ;; (define*          (the-func ---) ---)
     ;; (define/typed     (the-func ---) ---)
-    ;; (define/std  (the-func ---) ---)
+    ;; (define/checked   (the-func ---) ---)
+    ;; (define/std       (the-func ---) ---)
     ;; (define-generic   (the-func ---) ---)
     ;; (define-method    (the-func ---) ---)
     ;;
@@ -87,7 +88,7 @@ The point is repositioned to the starting point."
     ;; (define-generic   the-thing ---)
     ;; (define-method    the-thing ---)
     (nil
-     "^(define\\(\\|\\*\\|/std\\|/typed\\|-\\(generic\\|method\\)\\)*\\s-+(?\\(\\sw+\\)" 3)
+     "^(define\\(\\|\\*\\|/std\\|/typed\\|/checked\\|-\\(generic\\|method\\)\\)*\\s-+(?\\(\\sw+\\)" 3)
 
     ;; (define-constant		the-thing ---)
     ;; (define-inline-constant	the-thing ---)
@@ -98,8 +99,9 @@ The point is repositioned to the starting point."
     ;; (case-define* the-func ---)
     ;; (case-define/std the-func ---)
     ;; (case-define/typed the-func ---)
+    ;; (case-define/checked the-func ---)
     (nil
-     "^(case-define\\(\\|\\*\\|/std\\|/define\\)\\s-+\\(\\sw+\\)" 2)
+     "^(case-define\\(\\|\\*\\|/std\\|/typed\\|/checked\\)\\s-+\\(\\sw+\\)" 2)
 
 ;;; types, labels and classes
 
@@ -594,15 +596,18 @@ in the Scheme mode hook."
     (case-define					. 1)
     (case-define/std					. 1)
     (case-define/typed					. 1)
+    (case-define/checked				. 1)
     (case-define*					. 1)
     (case-endianness					. 1)
     (case-lambda					. 0)
     (case-lambda/std					. 0)
     (case-lambda/typed					. 0)
+    (case-lambda/checked				. 0)
     (case-lambda*					. 0)
     (named-case-lambda					. 1)
     (named-case-lambda/std				. 1)
     (named-case-lambda/typed				. 1)
+    (named-case-lambda/checked				. 1)
     (named-case-lambda*					. 1)
     (case-type						. 1)
     (check						. 1)
@@ -626,15 +631,18 @@ in the Scheme mode hook."
     (inherit						. 1)
     (internal-body					. 0)
     (internal-define					. 2)
-    (define/std					. 1)
+    (define/std						. 1)
     (define/typed					. 1)
-    (lambda/std					. 1)
+    (define/checked					. 1)
+    (lambda/std						. 1)
     (lambda/typed					. 1)
+    (lambda/checked					. 1)
     (lambda*						. 1)
     (named-lambda*					. 2)
     (named-lambda					. 2)
     (named-lambda/std					. 2)
     (named-lambda/typed					. 2)
+    (named-lambda/checked				. 2)
     (eval-for-expand					. 0)
     (fluid-let-syntax					. 1)
     (format						. 1)
@@ -690,14 +698,11 @@ in the Scheme mode hook."
     (for-all1						. 1)
     (for-each-in-order					. 1)
     (for-each1						. 1)
-    (lambda/tags					. 1)
     (let*-constant-values				. 1)
     (let*-constants					. 1)
     (let*-keywords					. 3)
     (let*-syntax					. 1)
     (let*-values					. 1)
-    (let*-values/tags					. 1)
-    (let*/tags						. 1)
     (let-connectors					. 1)
     (let-constant-values				. 1)
     (let-constants					. 1)
@@ -707,17 +712,12 @@ in the Scheme mode hook."
     (let-optional*					. 2)
     (let-sexp						. 3)
     (let-sexp*						. 3)
-    (let-values/tags					. 1)
     (let-vectors					. 1)
     (let/cc						. 1)
-    (let/tags						. 1)
     (letrec*-constants					. 1)
     (letrec*-keywords					. 3)
-    (letrec*/tags					. 1)
     (letrec-constants					. 1)
     (letrec-keywords					. 3)
-    (letrec/tags					. 1)
-    (letrec/tags					. 1)
     (loop-upon-list					. 2)
     (make						. 1)
     (make*						. 1)

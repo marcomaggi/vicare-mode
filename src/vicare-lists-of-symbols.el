@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-03-26 07:59:57 marco>
+;; Time-stamp: <2016-03-28 15:38:01 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -782,8 +782,8 @@ language built ins.")
     "let-constants" "let*-constants" "letrec-constants" "letrec*-constants"
     "stale-when" "foreign-call" "case-identifiers"
     "internal-body"
-    "define/std" "define/typed"
-    "lambda/std" "lambda/typed"
+    "define/std" "define/typed" "define/checked"
+    "lambda/std" "lambda/typed" "lambda/checked"
     "returnable" "infix"
     "cond-expand"
     "do*" "dolist" "dotimes"
@@ -827,9 +827,9 @@ language built ins.")
     ;; "define-inline" "define-constant"
     ;; "define-values" "define-constant-values"
 
-    "case-lambda/std" "case-lambda/typed"
-    "named-lambda" "named-lambda/std" "named-lambda/typed"
-    "named-case-lambda" "named-case-lambda/std" "named-case-lambda/typed"
+    "case-lambda/std" "case-lambda/typed" "case-lambda/checked"
+    "named-lambda" "named-lambda/std" "named-lambda/typed" "named-lambda/checked"
+    "named-case-lambda" "named-case-lambda/std" "named-case-lambda/typed" "named-case-lambda/checked"
     "lambda*" "case-lambda*" "named-case-lambda*" "named-lambda*"
 
     ;; generic syntaxes for typed values
@@ -2092,16 +2092,12 @@ language built ins.")
     "check" "check-ec" "with-result"
     "<...>"
     "with-tags"
-    "let/tags" "let*/tags" "letrec/tags" "letrec*/tags"
-    "let-values/tags" "let*-values/tags"
-    "lambda/tags" "case-lambda/tags"
     "with-compensations" "with-compensations/on-error"
     "compensate" "with" "push-compensation"
     "tag-case"
     ;;These definitions are to be handled separately.
     ;;
     ;; "define-class" "define-label" "define-builtin-label" "define-mixin"
-    ;; "define/tags" "case-define/tags"
     "abstract" "virtual-fields" "methods" "method-syntax" "maker" "mixins"
     "predicate" "setter" "getter" "public-protocol"
     "shadows"
