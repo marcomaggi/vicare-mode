@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-04-12 17:04:27 marco>
+;; Time-stamp: <2016-04-13 05:59:16 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -797,7 +797,7 @@ language built ins.")
 
     "expander-options" "compiler-options"
 
-    "type-of" "expansion-of" "expansion-of*" "visit-code-of"
+    "expansion-of" "expansion-of*" "visit-code-of"
     "optimisation-of" "optimisation-of*"
     "further-optimisation-of" "further-optimisation-of*"
     "assembly-of"
@@ -838,6 +838,7 @@ language built ins.")
     "method-call" "new" "delete" "case-type"
     "assert-signature" "assert-signature-and-return"
     "cast-signature" "unsafe-cast-signature"
+    "type-of" "type-annotation=?"
     "type-annotation-super-and-sub?" "type-signature-super-and-sub?"
     "type-annotation-common-ancestor" "type-signature-common-ancestor"
 
