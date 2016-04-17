@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-04-13 05:59:16 marco>
+;; Time-stamp: <2016-04-17 07:14:19 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -841,6 +841,7 @@ language built ins.")
     "type-of" "type-annotation=?"
     "type-annotation-super-and-sub?" "type-signature-super-and-sub?"
     "type-annotation-common-ancestor" "type-signature-common-ancestor"
+    "type-annotation-ancestors"
 
     "make-parameter" "parametrise" "parameterise" "parameterize"
 
@@ -888,7 +889,8 @@ language built ins.")
     "brace" "return" "continue" "break" "with"
     "visit-upon-loading" "typed-language" "strict-r6rs"
     "stdin" "stdout" "stderr"
-    "pair" "pair-of" "list-of" "vector-of" "hashtable" "alist")
+    "pair" "pair-of" "list-of" "vector-of" "hashtable" "alist"
+    "parent-of" "ancestors-of")
   "List of auxiliary syntaxes from the Vicare libraries.")
 
 (defconst vicare-vicare-functions-list
