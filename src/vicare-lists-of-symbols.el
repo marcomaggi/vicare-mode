@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-04-19 20:38:37 marco>
+;; Time-stamp: <2016-04-20 09:30:12 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -839,10 +839,8 @@ language built ins.")
     "assert-signature" "assert-signature-and-return"
     "cast-signature" "unsafe-cast-signature"
     "type-of" "type-annotation=?"
-    "type-annotation-super-and-sub?" "type-signature-super-and-sub?"
-    "type-signature-matching"
-    "type-annotation-common-ancestor" "type-signature-common-ancestor"
-    "type-annotation-ancestors"
+    "type-annotation-super-and-sub?" "type-annotation-common-ancestor" "type-annotation-ancestors"
+    "type-signature-super-and-sub?" "type-signature-matching" "type-signature-union"  "type-signature-common-ancestor"
 
     "make-parameter" "parametrise" "parameterise" "parameterize"
 
