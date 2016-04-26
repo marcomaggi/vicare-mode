@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-04-25 09:39:33 marco>
+;; Time-stamp: <2016-04-26 20:15:01 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -788,7 +788,8 @@ language built ins.")
     "cond-expand"
     "do*" "dolist" "dotimes"
 
-    ;;Additional clauses for DEFINE-RECORD-TYPE.
+    ;;Additional clauses for DEFINE-RECORD-TYPE and DEFINE-LABEL.
+    "constructor" "destructor"
     "super-protocol" "destructor-protocol"
     "custom-predicate" "custom-printer"
     "method" "case-method"
