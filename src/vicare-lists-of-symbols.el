@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-04-27 09:46:37 marco>
+;; Time-stamp: <2016-04-28 08:43:37 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -890,7 +890,7 @@ language built ins.")
     "brace" "return" "continue" "break" "with"
     "visit-upon-loading" "typed-language" "strict-r6rs"
     "stdin" "stdout" "stderr"
-    "pair" "pair-of" "list-of" "vector-of" "hashtable" "alist" "enumeration"
+    "pair" "pair-of" "list-of" "nelist-of" "vector-of" "hashtable" "alist" "enumeration"
     "parent-of" "ancestor-of")
   "List of auxiliary syntaxes from the Vicare libraries.")
 
