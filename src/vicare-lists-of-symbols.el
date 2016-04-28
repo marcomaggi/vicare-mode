@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-04-28 08:43:37 marco>
+;; Time-stamp: <2016-04-28 12:57:10 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -782,6 +782,10 @@ language built ins.")
     "let-constants" "let*-constants" "letrec-constants" "letrec*-constants"
     "stale-when" "foreign-call" "case-identifiers"
     "internal-body"
+    "let/std" "let/checked"
+    "let*/std" "let*/checked"
+    "letrec/std" "letrec/checked"
+    "letrec*/std" "letrec*/checked"
     "define/std" "define/typed" "define/checked"
     "lambda/std" "lambda/typed" "lambda/checked"
     "returnable" "infix"

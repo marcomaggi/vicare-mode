@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-04-26 21:00:56 marco>
+;; Time-stamp: <2016-04-28 12:57:01 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -639,6 +639,14 @@ in the Scheme mode hook."
     (lambda/typed					. 1)
     (lambda/checked					. 1)
     (lambda*						. 1)
+    (let/std						. 1)
+    (let/checked					. 1)
+    (let*/std						. 1)
+    (let*/checked					. 1)
+    (letrec/std						. 1)
+    (letrec/checked					. 1)
+    (letrec*/std					. 1)
+    (letrec*/checked					. 1)
     (named-lambda*					. 2)
     (named-lambda					. 2)
     (named-lambda/std					. 2)
