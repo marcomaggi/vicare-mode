@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-04-28 12:57:10 marco>
+;; Time-stamp: <2016-04-30 07:30:16 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -55,7 +55,8 @@
 	  "\\)"))
 
 (defconst vicare-identifier-special-subsequent-rex
-  "\\(?:\\-\\|\\+\\|\\.\\|@\\)")
+  ;;One among: - + . @ ?
+  (concat "\\(?:" "\\-\\|\\+\\|\\.\\|@\\|?" "\\)"))
 
 (defconst vicare-identifier-subsequent-rex
   (concat "\\(?:" vicare-identifier-initial-rex
