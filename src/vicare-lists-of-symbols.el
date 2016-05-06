@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-04-30 07:30:16 marco>
+;; Time-stamp: <2016-05-06 10:20:18 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -778,7 +778,10 @@ language built ins.")
   "List of strings to be highlighted as warning when present in a comment.")
 
 (defconst vicare-vicare-syntaxes-list
-  '("begin0" "receive" "receive-and-return" "module" "include" "xor"
+  '("begin0"
+    "receive" "receive/std" "receive/checked"
+    "receive-and-return" "receive-and-return/std" "receive-and-return/checked"
+    "module" "include" "xor"
     "let*-values" "let*-syntax"
     "let-constants" "let*-constants" "letrec-constants" "letrec*-constants"
     "stale-when" "foreign-call" "case-identifiers"

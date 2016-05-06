@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-04-28 12:57:01 marco>
+;; Time-stamp: <2016-05-06 10:20:43 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -677,6 +677,8 @@ in the Scheme mode hook."
     (parametrise					. 1)
     (recursion						. 1)
     (receive						. 2)
+    (receive/std					. 2)
+    (receive/checked					. 2)
     (returnable						. 0)
     (record-type-printer-set!				. 1)
     (constructor					. 1)
@@ -763,6 +765,8 @@ in the Scheme mode hook."
     (r6.make-token-lexer				. 1)
     (rec						. 1)
     (receive-and-return					. 2)
+    (receive-and-return/std				. 2)
+    (receive-and-return/checked				. 2)
     (syntax-match					. 2)
     (method						. 1)
     (case-method					. 1)
