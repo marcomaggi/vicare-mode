@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-05-06 10:34:47 marco>
+;; Time-stamp: <2016-05-07 07:02:23 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -795,6 +795,8 @@ language built ins.")
     "returnable" "infix"
     "cond-expand"
     "do*" "dolist" "dotimes"
+    "let-values" "let-values/std" "let-values/checked"
+    "let*-values" "let*-values/std" "let*-values/checked"
 
     ;;Additional clauses for DEFINE-RECORD-TYPE and DEFINE-LABEL.
     "constructor" "destructor"
