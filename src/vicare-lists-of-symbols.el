@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-05-07 07:02:23 marco>
+;; Time-stamp: <2016-05-07 13:00:26 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -102,7 +102,7 @@
   "List of condition symbols for the R6RS Scheme language.")
 
 (defconst vicare-r6rs-keywords-list
-  '("apply" "assert" "begin" "case" "case-lambda" "cond" "endianness"
+  '("assert" "begin" "case" "case-lambda" "cond" "endianness"
     "delay"
     ;;Keywords starting with "define" should be handled separately.
     ;;
