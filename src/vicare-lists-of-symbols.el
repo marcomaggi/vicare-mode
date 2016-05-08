@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-05-08 06:28:49 marco>
+;; Time-stamp: <2016-05-08 09:02:58 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -883,6 +883,8 @@ language built ins.")
     "with-output-to-port"
     "with-output-to-string"
 
+    "time"
+
     ;; restarts
     "handler-case"
     "ignore-errors"
@@ -1612,7 +1614,6 @@ language built ins.")
     "system-id"
     "system-id-gensym"
     "tanh"
-    "time"
     "time<=?"
     "time<?"
     "time=?"
