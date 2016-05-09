@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-05-08 09:02:58 marco>
+;; Time-stamp: <2016-05-09 12:28:28 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1293,8 +1293,6 @@ language built ins.")
     "synonym-transformer-identifier"
     "make-errno-condition"
     "make-file-options"
-    "make-expander-options"
-    "make-compiler-options"
     "make-guardian"
     "make-h_errno-condition"
     "make-interrupted-condition"
