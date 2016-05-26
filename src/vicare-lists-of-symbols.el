@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-05-26 09:15:51 marco>
+;; Time-stamp: <2016-05-26 11:51:31 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -896,7 +896,7 @@ language built ins.")
   "List of syntax identifiers from some Vicare libraries.")
 
 (defconst vicare-vicare-aux-syntaxes-list
-  '("__who__" "__file__" "__line__" "<>"
+  '("__who__" "__synner__" "__file__" "__line__" "<>"
     "?" ":" "!" "%" "&" "^" "~" "<<" ">>" "⏐" "⏐⏐" "¦" "¦¦" "**" "=="
     "∧" "∨" "⊻" "¬" "×" "≠" "⋅"
     "brace" "return" "continue" "break" "with"
