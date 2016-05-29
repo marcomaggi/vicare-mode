@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-05-26 11:51:31 marco>
+;; Time-stamp: <2016-05-29 09:21:50 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -790,7 +790,7 @@ language built ins.")
     "let*/std" "let*/checked"
     "letrec/std" "letrec/checked"
     "letrec*/std" "letrec*/checked"
-    "define/std" "define/typed" "define/checked"
+    "define/std" "define/typed" "define/checked" "define/overload"
     "lambda/std" "lambda/typed" "lambda/checked"
     "returnable" "infix"
     "cond-expand"
@@ -802,7 +802,7 @@ language built ins.")
     "constructor" "destructor"
     "super-protocol" "destructor-protocol"
     "custom-predicate" "custom-printer"
-    "method" "case-method"
+    "method" "case-method" "method/overload"
     "define-type-descriptors" "strip-angular-parentheses"
     "type-predicate" "equality-predicate" "comparison-procedure" "hash-function"
 

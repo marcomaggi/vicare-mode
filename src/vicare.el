@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-05-07 07:03:10 marco>
+;; Time-stamp: <2016-05-29 09:25:57 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -775,7 +775,7 @@ in the Scheme mode hook."
     (syntax-match					. 2)
     (method						. 1)
     (case-method					. 1)
-    (method-syntax					. 1)
+    (method/overload					. 1)
     (set-identifier-object-spec!			. 1)
     (set-identifier-callable-spec!			. 1)
     (set-identifier-unsafe-variant!			. 1)
