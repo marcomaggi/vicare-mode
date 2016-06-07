@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-05-29 09:21:50 marco>
+;; Time-stamp: <2016-06-07 15:54:06 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -853,6 +853,9 @@ language built ins.")
     "type-annotation-super-and-sub?" "type-annotation-common-ancestor" "type-annotation-ancestors"
     "type-annotation-syntax" "type-annotation-matching"
     "type-signature-super-and-sub?" "type-signature-matching" "type-signature-union"  "type-signature-common-ancestor"
+
+    "type-descriptor=?" "type-descriptor-parent" "type-descriptor-ancestors"
+    "type-descriptor-ancestry-super-and-sub?" "type-descriptor-matching-super-and-sub?"
 
     "make-parameter" "parametrise" "parameterise" "parameterize"
 
