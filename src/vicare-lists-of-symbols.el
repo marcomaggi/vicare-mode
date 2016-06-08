@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-06-07 15:54:06 marco>
+;; Time-stamp: <2016-06-08 10:48:22 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -856,6 +856,7 @@ language built ins.")
 
     "type-descriptor=?" "type-descriptor-parent" "type-descriptor-ancestors"
     "type-descriptor-ancestry-super-and-sub?" "type-descriptor-matching-super-and-sub?"
+    "descriptors-signature-matching"
 
     "make-parameter" "parametrise" "parameterise" "parameterize"
 
