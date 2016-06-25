@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-06-21 15:33:18 marco>
+;; Time-stamp: <2016-06-25 06:56:08 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -799,7 +799,7 @@ language built ins.")
     "let*-values" "let*-values/std" "let*-values/checked"
 
     ;;Additional clauses for DEFINE-RECORD-TYPE and DEFINE-LABEL.
-    "constructor" "destructor"
+    "constructor" "destructor" "constructor-signature"
     "super-protocol" "destructor-protocol"
     "custom-predicate" "custom-printer"
     "method" "case-method" "method/overload"
@@ -845,7 +845,7 @@ language built ins.")
     "lambda*" "case-lambda*" "named-case-lambda*" "named-lambda*"
 
     ;; generic syntaxes for typed values
-    "type-descriptor" "type-unique-identifiers" "is-a?" "slot-set!" "slot-ref"
+    "type-descriptor" "type-unique-identifiers" "is-a?"
     "method-call" "new" "delete" "case-type"
     "assert-signature" "assert-signature-and-return"
     "cast-signature" "unsafe-cast-signature"
