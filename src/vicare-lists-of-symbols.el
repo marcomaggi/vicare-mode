@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-06-25 06:56:08 marco>
+;; Time-stamp: <2016-06-25 12:49:55 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -2114,7 +2114,7 @@ language built ins.")
     ;;These definitions are to be handled separately.
     ;;
     ;; "define-class" "define-label" "define-builtin-label" "define-mixin"
-    "abstract" "virtual-fields" "methods" "method-syntax" "maker" "mixins"
+    "abstract" "virtual-fields" "methods" "method-syntax" "maker" "mixins" "implements"
     "predicate" "setter" "getter" "public-protocol"
     "shadows"
     "make-from-fields"
