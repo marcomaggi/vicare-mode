@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-06-25 12:49:55 marco>
+;; Time-stamp: <2016-06-26 12:53:16 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -805,6 +805,7 @@ language built ins.")
     "method" "case-method" "method/overload"
     "define-type-descriptors" "strip-angular-parentheses"
     "type-predicate" "equality-predicate" "comparison-procedure" "hash-function"
+    "mixins" "implements" "method-prototype"
 
     "expander-options" "compiler-options"
 
@@ -2103,58 +2104,58 @@ language built ins.")
 
 ;;;; lists of custom symbols
 
-(defconst vicare-nausicaa-syntaxes-list
-  '("and-let*" "rec" "recursion"
-    "check" "check-ec" "with-result"
-    "<...>"
-    "with-tags"
-    "with-compensations" "with-compensations/on-error"
-    "compensate" "with" "push-compensation"
-    "tag-case"
-    ;;These definitions are to be handled separately.
-    ;;
-    ;; "define-class" "define-label" "define-builtin-label" "define-mixin"
-    "abstract" "virtual-fields" "methods" "method-syntax" "maker" "mixins" "implements"
-    "predicate" "setter" "getter" "public-protocol"
-    "shadows"
-    "make-from-fields"
-    "with-namespace" "using")
-  "List of syntax identifiers from some Nausicaa libraries.")
+;; (defconst vicare-nausicaa-syntaxes-list
+;;   '("and-let*" "rec" "recursion"
+;;     "check" "check-ec" "with-result"
+;;     "<...>"
+;;     "with-tags"
+;;     "with-compensations" "with-compensations/on-error"
+;;     "compensate" "with" "push-compensation"
+;;     "tag-case"
+;;     ;;These definitions are to be handled separately.
+;;     ;;
+;;     ;; "define-class" "define-label" "define-builtin-label" "define-mixin"
+;;     "abstract" "virtual-fields" "methods" "method-syntax" "maker" "mixins" "implements"
+;;     "predicate" "setter" "getter" "public-protocol"
+;;     "shadows"
+;;     "make-from-fields"
+;;     "with-namespace" "using")
+;;   "List of syntax identifiers from some Nausicaa libraries.")
 
-(defconst vicare-nausicaa-functions-list
-  '("add-result" "get-result"
-    "check-report" "check-set-mode!" "check-reset!" "check-passed"
-    "check-display" "check-write" "check-newline" "check-pretty-print" "check-quiet-tests?"
-    "pretty-print")
-  "List of function identifiers from some Nausicaa libraries.")
+;; (defconst vicare-nausicaa-functions-list
+;;   '("add-result" "get-result"
+;;     "check-report" "check-set-mode!" "check-reset!" "check-passed"
+;;     "check-display" "check-write" "check-newline" "check-pretty-print" "check-quiet-tests?"
+;;     "pretty-print")
+;;   "List of function identifiers from some Nausicaa libraries.")
 
-(defconst vicare-nausicaa-functions-list/lists
-  '("alist-cons" "alist-copy" "alist-delete" "alist-delete!"
-    "any" "append" "append!" "append-map" "append-map!"
-    "append-reverse" "append-reverse!" "assoc" "assq" "assv"
-    "break" "break!" "car+cdr" "circular-list" "circular-list?"
-    "concatenate" "concatenate!" "cons" "cons*" "count" ;;"delete"
-    "delete!" "delete-duplicates" "delete-duplicates!" "dotted-list?"
-    "drop" "drop-right" "drop-right!" "drop-while" "eighth" "every"
-    "fifth" "filter!" "filter-map" "find" "find-tail"
-    "first" "fold" "fold-right" "for-each*" "fourth" "iota"
-    "last" "last-pair" "length" "length+" "list" "list-copy"
-    "list-index" "list-ref" "list-tabulate" "list=?" "lset-adjoin"
-    "lset-diff+intersection" "lset-diff+intersection!" "lset-difference"
-    "lset-difference!" "lset-intersection" "lset-intersection!"
-    "lset-union" "lset-union!" "lset-xor" "lset-xor!" "lset<=?"
-    "lset=?" "make-list" "map*" "map!" "map-in-order" "member"
-    "memq" "memv" "ninth" "not-pair?" "null-list?" "null?"
-    "pair-fold" "pair-fold-right" "pair-for-each" "pair?"
-    "partition" "partition!" "proper-list?" "reduce"
-    "reduce-right" "remove*" "remove*!" "reverse" "reverse!"
-    "second" "seventh" "sixth" "span"
-    "span!" "split-at" "split-at!" "take" "take!" "take-right"
-    "take-while" "take-while!" "tenth" "third" "unfold"
-    "unfold-right" "unzip1" "unzip2" "unzip3" "unzip4" "unzip5"
-    "xcons" "zip"
-    )
-  "List of functions from Nausicaa's `(lists)' libraries.")
+;; (defconst vicare-nausicaa-functions-list/lists
+;;   '("alist-cons" "alist-copy" "alist-delete" "alist-delete!"
+;;     "any" "append" "append!" "append-map" "append-map!"
+;;     "append-reverse" "append-reverse!" "assoc" "assq" "assv"
+;;     "break" "break!" "car+cdr" "circular-list" "circular-list?"
+;;     "concatenate" "concatenate!" "cons" "cons*" "count" ;;"delete"
+;;     "delete!" "delete-duplicates" "delete-duplicates!" "dotted-list?"
+;;     "drop" "drop-right" "drop-right!" "drop-while" "eighth" "every"
+;;     "fifth" "filter!" "filter-map" "find" "find-tail"
+;;     "first" "fold" "fold-right" "for-each*" "fourth" "iota"
+;;     "last" "last-pair" "length" "length+" "list" "list-copy"
+;;     "list-index" "list-ref" "list-tabulate" "list=?" "lset-adjoin"
+;;     "lset-diff+intersection" "lset-diff+intersection!" "lset-difference"
+;;     "lset-difference!" "lset-intersection" "lset-intersection!"
+;;     "lset-union" "lset-union!" "lset-xor" "lset-xor!" "lset<=?"
+;;     "lset=?" "make-list" "map*" "map!" "map-in-order" "member"
+;;     "memq" "memv" "ninth" "not-pair?" "null-list?" "null?"
+;;     "pair-fold" "pair-fold-right" "pair-for-each" "pair?"
+;;     "partition" "partition!" "proper-list?" "reduce"
+;;     "reduce-right" "remove*" "remove*!" "reverse" "reverse!"
+;;     "second" "seventh" "sixth" "span"
+;;     "span!" "split-at" "split-at!" "take" "take!" "take-right"
+;;     "take-while" "take-while!" "tenth" "third" "unfold"
+;;     "unfold-right" "unzip1" "unzip2" "unzip3" "unzip4" "unzip5"
+;;     "xcons" "zip"
+;;     )
+;;   "List of functions from Nausicaa's `(lists)' libraries.")
 
 (defconst vicare-clos-syntaxes-list
   '( ;;These definitions are to be handled separately.
@@ -2172,195 +2173,191 @@ language built ins.")
     "class?" "instance?" "subclass?")
   "List of functions from the Scheme CLOS-like libraries.")
 
-(defconst vicare-nausicaa-ffi-functions-list
-  '("platform-free"	"primitive-free"	"primitive-free-function"
-    "platform-malloc"	"primitive-malloc"	"primitive-malloc-function"
-    "platform-calloc"	"primitive-calloc"	"primitive-calloc-function"
-    "platform-realloc"	"primitive-realloc"	"primitive-realloc-function"
+;; (defconst vicare-nausicaa-ffi-functions-list
+;;   '("platform-free"	"primitive-free"	"primitive-free-function"
+;;     "platform-malloc"	"primitive-malloc"	"primitive-malloc-function"
+;;     "platform-calloc"	"primitive-calloc"	"primitive-calloc-function"
+;;     "platform-realloc"	"primitive-realloc"	"primitive-realloc-function"
 
-    "malloc"		"realloc"		"calloc"
-    "memset"		"memmove"		"memcpy"
-    "memcmp"
+;;     "malloc"		"realloc"		"calloc"
+;;     "memset"		"memmove"		"memcpy"
+;;     "memcmp"
 
-    "pointer?"
-    "pointer-null"			"pointer-null?"
-    "integer->pointer"			"pointer->integer"
-    "pointer-diff"			"pointer-add"
+;;     "pointer?"
+;;     "pointer-null"			"pointer-null?"
+;;     "integer->pointer"			"pointer->integer"
+;;     "pointer-diff"			"pointer-add"
 
-    "pointer=?"				"pointer!=?"
-    "pointer<?"				"pointer>?"
-    "pointer<=?"			"pointer>=?"
+;;     "pointer=?"				"pointer!=?"
+;;     "pointer<?"				"pointer>?"
+;;     "pointer<=?"			"pointer>=?"
 
-    "make-memblock"			"memblock?"
-    "memblock-pointer"			"memblock-size"
+;;     "make-memblock"			"memblock?"
+;;     "memblock-pointer"			"memblock-size"
 
-    "make-buffer"
-    "buffer-pointer"			"buffer-size"
-    "buffer?"				"buffer-used?"
-    "buffer-full?"			"buffer-empty?"
-    "buffer-used-size"			"buffer-used-size-set!"
-    "buffer-free-size"			"buffer-consume-bytes!"
-    "buffer-used-memblock"		"buffer-free-memblock"
-    "buffer-pointer-to-free-bytes"	"buffer-incr-used-size!"
-    "buffer-push-memblock!"		"buffer-pop-memblock!"
-    "buffer-push-bytevector!"		"buffer-pop-bytevector!"
-    "buffer-push-buffer!"		"buffer-pop-buffer!"
+;;     "make-buffer"
+;;     "buffer-pointer"			"buffer-size"
+;;     "buffer?"				"buffer-used?"
+;;     "buffer-full?"			"buffer-empty?"
+;;     "buffer-used-size"			"buffer-used-size-set!"
+;;     "buffer-free-size"			"buffer-consume-bytes!"
+;;     "buffer-used-memblock"		"buffer-free-memblock"
+;;     "buffer-pointer-to-free-bytes"	"buffer-incr-used-size!"
+;;     "buffer-push-memblock!"		"buffer-pop-memblock!"
+;;     "buffer-push-bytevector!"		"buffer-pop-bytevector!"
+;;     "buffer-push-buffer!"		"buffer-pop-buffer!"
 
-    "make-block-cache"			"make-caching-object-factory"
-    "small-blocks-cache"		"page-blocks-cache"
-    "memblocks-cache"			"buffers-cache"
+;;     "make-block-cache"			"make-caching-object-factory"
+;;     "small-blocks-cache"		"page-blocks-cache"
+;;     "memblocks-cache"			"buffers-cache"
 
-    "malloc/compensated"		"malloc/c"
-    "calloc/compensated"		"calloc/c"
-    "malloc-small/compensated"		"malloc-small/c"
-    "malloc-page/compensated"		"malloc-page/c"
-    "malloc-block/compensated"		"malloc-block/c"
-    "malloc-memblock/compensated"	"malloc-memblock/c"
-    "malloc-buffer/compensated"		"malloc-buffer/c"
+;;     "malloc/compensated"		"malloc/c"
+;;     "calloc/compensated"		"calloc/c"
+;;     "malloc-small/compensated"		"malloc-small/c"
+;;     "malloc-page/compensated"		"malloc-page/c"
+;;     "malloc-block/compensated"		"malloc-block/c"
+;;     "malloc-memblock/compensated"	"malloc-memblock/c"
+;;     "malloc-buffer/compensated"		"malloc-buffer/c"
 
-    "bytevector->pointer"		"pointer->bytevector"
-    "bytevector->memblock"		"memblock->bytevector"
+;;     "bytevector->pointer"		"pointer->bytevector"
+;;     "bytevector->memblock"		"memblock->bytevector"
 
-    "memory-buffer-pool"
-    "primitive-buffer-malloc"		"buffer-malloc"
+;;     "memory-buffer-pool"
+;;     "primitive-buffer-malloc"		"buffer-malloc"
 
-    "malloc/refcount"			"malloc/rc"
-    "pointer-acquire"			"pointer-release"
-    "pointer-dismiss"
+;;     "malloc/refcount"			"malloc/rc"
+;;     "pointer-acquire"			"pointer-release"
+;;     "pointer-dismiss"
 
-    "pointer-ref-c-int8"		"pointer-ref-c-uint8"
-    "pointer-ref-c-int16"		"pointer-ref-c-uint16"
-    "pointer-ref-c-int32"		"pointer-ref-c-uint32"
-    "pointer-ref-c-int64"		"pointer-ref-c-uint64"
+;;     "pointer-ref-c-int8"		"pointer-ref-c-uint8"
+;;     "pointer-ref-c-int16"		"pointer-ref-c-uint16"
+;;     "pointer-ref-c-int32"		"pointer-ref-c-uint32"
+;;     "pointer-ref-c-int64"		"pointer-ref-c-uint64"
 
-    "pointer-ref-c-float"		"pointer-ref-c-double"
-    "pointer-ref-c-void*"
+;;     "pointer-ref-c-float"		"pointer-ref-c-double"
+;;     "pointer-ref-c-void*"
 
-    "pointer-ref-c-signed-char"		"pointer-ref-c-unsigned-char"
-    "pointer-ref-c-signed-short"	"pointer-ref-c-unsigned-short"
-    "pointer-ref-c-signed-int"		"pointer-ref-c-unsigned-int"
-    "pointer-ref-c-signed-long"		"pointer-ref-c-unsigned-long"
-    "pointer-ref-c-signed-long-long"	"pointer-ref-c-unsigned-long-long"
+;;     "pointer-ref-c-signed-char"		"pointer-ref-c-unsigned-char"
+;;     "pointer-ref-c-signed-short"	"pointer-ref-c-unsigned-short"
+;;     "pointer-ref-c-signed-int"		"pointer-ref-c-unsigned-int"
+;;     "pointer-ref-c-signed-long"		"pointer-ref-c-unsigned-long"
+;;     "pointer-ref-c-signed-long-long"	"pointer-ref-c-unsigned-long-long"
 
-    "pointer-ref-c-pointer"
+;;     "pointer-ref-c-pointer"
 
-    "pointer-set-c-int8!"		"pointer-set-c-uint8!"
-    "pointer-set-c-int16!"		"pointer-set-c-uint16!"
-    "pointer-set-c-int32!"		"pointer-set-c-uint32!"
-    "pointer-set-c-int64!"		"pointer-set-c-uint64!"
+;;     "pointer-set-c-int8!"		"pointer-set-c-uint8!"
+;;     "pointer-set-c-int16!"		"pointer-set-c-uint16!"
+;;     "pointer-set-c-int32!"		"pointer-set-c-uint32!"
+;;     "pointer-set-c-int64!"		"pointer-set-c-uint64!"
 
-    "pointer-set-c-float!"		"pointer-set-c-double!"
-    "pointer-set-c-void*!"
+;;     "pointer-set-c-float!"		"pointer-set-c-double!"
+;;     "pointer-set-c-void*!"
 
-    "pointer-set-c-signed-char!"	"pointer-set-c-unsigned-char!"
-    "pointer-set-c-signed-short!"	"pointer-set-c-unsigned-short!"
-    "pointer-set-c-signed-int!"		"pointer-set-c-unsigned-int!"
-    "pointer-set-c-signed-long!"	"pointer-set-c-unsigned-long!"
-    "pointer-set-c-signed-long-long!"	"pointer-set-c-unsigned-long-long!"
-    "pointer-set-c-pointer!"
+;;     "pointer-set-c-signed-char!"	"pointer-set-c-unsigned-char!"
+;;     "pointer-set-c-signed-short!"	"pointer-set-c-unsigned-short!"
+;;     "pointer-set-c-signed-int!"		"pointer-set-c-unsigned-int!"
+;;     "pointer-set-c-signed-long!"	"pointer-set-c-unsigned-long!"
+;;     "pointer-set-c-signed-long-long!"	"pointer-set-c-unsigned-long-long!"
+;;     "pointer-set-c-pointer!"
 
-    "array-ref-c-int8"			"array-ref-c-uint8"
-    "array-ref-c-int16"			"array-ref-c-uint16"
-    "array-ref-c-int32"			"array-ref-c-uint32"
-    "array-ref-c-int64"			"array-ref-c-uint64"
-    "array-ref-c-float"			"array-ref-c-double"
-    "array-ref-c-void*"
-    "array-ref-c-signed-char"		"array-ref-c-unsigned-char"
-    "array-ref-c-signed-short"		"array-ref-c-unsigned-short"
-    "array-ref-c-signed-int"		"array-ref-c-unsigned-int"
-    "array-ref-c-signed-long"		"array-ref-c-unsigned-long"
-    "array-ref-c-signed-long-long"	"array-ref-c-unsigned-long-long"
-    "array-ref-c-pointer"
+;;     "array-ref-c-int8"			"array-ref-c-uint8"
+;;     "array-ref-c-int16"			"array-ref-c-uint16"
+;;     "array-ref-c-int32"			"array-ref-c-uint32"
+;;     "array-ref-c-int64"			"array-ref-c-uint64"
+;;     "array-ref-c-float"			"array-ref-c-double"
+;;     "array-ref-c-void*"
+;;     "array-ref-c-signed-char"		"array-ref-c-unsigned-char"
+;;     "array-ref-c-signed-short"		"array-ref-c-unsigned-short"
+;;     "array-ref-c-signed-int"		"array-ref-c-unsigned-int"
+;;     "array-ref-c-signed-long"		"array-ref-c-unsigned-long"
+;;     "array-ref-c-signed-long-long"	"array-ref-c-unsigned-long-long"
+;;     "array-ref-c-pointer"
 
-    "array-set-c-int8!"			"array-set-c-uint8!"
-    "array-set-c-int16!"		"array-set-c-uint16!"
-    "array-set-c-int32!"		"array-set-c-uint32!"
-    "array-set-c-int64!"		"array-set-c-uint64!"
-    "array-set-c-float!"		"array-set-c-double!"
-    "array-set-c-void*!"
+;;     "array-set-c-int8!"			"array-set-c-uint8!"
+;;     "array-set-c-int16!"		"array-set-c-uint16!"
+;;     "array-set-c-int32!"		"array-set-c-uint32!"
+;;     "array-set-c-int64!"		"array-set-c-uint64!"
+;;     "array-set-c-float!"		"array-set-c-double!"
+;;     "array-set-c-void*!"
 
-    "array-set-c-signed-char!"		"array-set-c-unsigned-char!"
-    "array-set-c-signed-short!"		"array-set-c-unsigned-short!"
-    "array-set-c-signed-int!"		"array-set-c-unsigned-int!"
-    "array-set-c-signed-long!"		"array-set-c-unsigned-long!"
-    "array-set-c-signed-long-long!"	"array-set-c-unsigned-long-long!"
+;;     "array-set-c-signed-char!"		"array-set-c-unsigned-char!"
+;;     "array-set-c-signed-short!"		"array-set-c-unsigned-short!"
+;;     "array-set-c-signed-int!"		"array-set-c-unsigned-int!"
+;;     "array-set-c-signed-long!"		"array-set-c-unsigned-long!"
+;;     "array-set-c-signed-long-long!"	"array-set-c-unsigned-long-long!"
 
-    "array-set-c-pointer!"
+;;     "array-set-c-pointer!"
 
-    "make-out-of-memory-condition"	"out-of-memory-condition?"
-    "out-of-memory-number-of-bytes"	"raise-out-of-memory"
+;;     "make-out-of-memory-condition"	"out-of-memory-condition?"
+;;     "out-of-memory-number-of-bytes"	"raise-out-of-memory"
 
-    "open-shared-object"
-    "shared-object"			"self-shared-object"
+;;     "open-shared-object"
+;;     "shared-object"			"self-shared-object"
 
-    "primitive-make-c-function"		"primitive-make-c-function/with-errno"
-    "make-c-function"			"make-c-function/with-errno"
-    "define-c-function"			"define-c-function/with-errno"
+;;     "primitive-make-c-function"		"primitive-make-c-function/with-errno"
+;;     "make-c-function"			"make-c-function/with-errno"
+;;     "define-c-function"			"define-c-function/with-errno"
 
-    "errno"
+;;     "errno"
 
-    "sizeof-char"		"sizeof-short"
-    "sizeof-int"		"sizeof-long"
-    "sizeof-long-long"		"sizeof-float"
-    "sizeof-double"		"sizeof-long-double"
-    "sizeof-pointer"
+;;     "sizeof-char"		"sizeof-short"
+;;     "sizeof-int"		"sizeof-long"
+;;     "sizeof-long-long"		"sizeof-float"
+;;     "sizeof-double"		"sizeof-long-double"
+;;     "sizeof-pointer"
 
-    "alignof-char"		"alignof-short"
-    "alignof-int"		"alignof-long"
-    "alignof-long-long"		"alignof-float"
-    "alignof-double"		"alignof-long-double"
-    "alignof-pointer"
+;;     "alignof-char"		"alignof-short"
+;;     "alignof-int"		"alignof-long"
+;;     "alignof-long-long"		"alignof-float"
+;;     "alignof-double"		"alignof-long-double"
+;;     "alignof-pointer"
 
-    "strideof-char"		"strideof-short"
-    "strideof-int"		"strideof-long"
-    "strideof-long-long"	"strideof-float"
-    "strideof-double"		"strideof-long-double"
-    "strideof-pointer"
+;;     "strideof-char"		"strideof-short"
+;;     "strideof-int"		"strideof-long"
+;;     "strideof-long-long"	"strideof-float"
+;;     "strideof-double"		"strideof-long-double"
+;;     "strideof-pointer"
 
-    "sizeof-char-array"		"sizeof-short-array"
-    "sizeof-int-array"		"sizeof-long-array"
-    "sizeof-long-long-array"	"sizeof-float-array"
-    "sizeof-double-array"	"sizeof-long-double-array"
-    "sizeof-pointer-array"
+;;     "sizeof-char-array"		"sizeof-short-array"
+;;     "sizeof-int-array"		"sizeof-long-array"
+;;     "sizeof-long-long-array"	"sizeof-float-array"
+;;     "sizeof-double-array"	"sizeof-long-double-array"
+;;     "sizeof-pointer-array"
 
-    "valueof-char-max"		"valueof-char-min"
-    "valueof-schar-max"		"valueof-schar-min"	"valueof-uchar-max"
-    "valueof-shrt-max"		"valueof-shrt-min"	"valueof-ushrt-max"
-    "valueof-int-max"		"valueof-int-min"	"valueof-uint-max"
-    "valueof-long-max"		"valueof-long-min"	"valueof-ulong-max"
-    "valueof-long-long-max"	"valueof-long-long-min"	"valueof-ulong-long-max"
-    "valueof-wchar-max"		"valueof-ssize-max"
-    "words-bigendian"		"on-64-bits-system"	"on-32-bits-system"
-    "on-32-bits-systems"	"on-64-bits-systems"
+;;     "valueof-char-max"		"valueof-char-min"
+;;     "valueof-schar-max"		"valueof-schar-min"	"valueof-uchar-max"
+;;     "valueof-shrt-max"		"valueof-shrt-min"	"valueof-ushrt-max"
+;;     "valueof-int-max"		"valueof-int-min"	"valueof-uint-max"
+;;     "valueof-long-max"		"valueof-long-min"	"valueof-ulong-max"
+;;     "valueof-long-long-max"	"valueof-long-long-min"	"valueof-ulong-long-max"
+;;     "valueof-wchar-max"		"valueof-ssize-max"
+;;     "words-bigendian"		"on-64-bits-system"	"on-32-bits-system"
+;;     "on-32-bits-systems"	"on-64-bits-systems"
 
-    "strlen"
-    "strcmp"			"strncmp"
-    "strcpy"			"strncpy"
-    "strdup"			"strndup"
-    "cstring->string"		"cstring->string/len"
-    "string->cstring/c"		"string->cstring"
-    "strings->argv"		"argv->strings"
-    "argv-length"
+;;     "strlen"
+;;     "strcmp"			"strncmp"
+;;     "strcpy"			"strncpy"
+;;     "strdup"			"strndup"
+;;     "cstring->string"		"cstring->string/len"
+;;     "string->cstring/c"		"string->cstring"
+;;     "strings->argv"		"argv->strings"
+;;     "argv-length"
 
-    "strerror"
-    "errno->symbol"		"errno->symbol/or-error"
-    "symbol->errno"		"symbol->errno/or-error"
-    "make-errno-condition"	"errno-condition?"
-    "errno-numeric-value"	"errno-symbolic-value"
-    "raise-errno-error")
-  "List of functions from Nausicaa's `(foreign)' libraries.")
+;;     "strerror"
+;;     "errno->symbol"		"errno->symbol/or-error"
+;;     "symbol->errno"		"symbol->errno/or-error"
+;;     "make-errno-condition"	"errno-condition?"
+;;     "errno-numeric-value"	"errno-symbolic-value"
+;;     "raise-errno-error")
+;;   "List of functions from Nausicaa's `(foreign)' libraries.")
 
 (defconst vicare-custom-functions-list
   (append vicare-vicare-functions-list
-	  vicare-nausicaa-functions-list
-	  vicare-nausicaa-functions-list/lists
-	  vicare-clos-functions-list
-	  vicare-nausicaa-ffi-functions-list))
+	  vicare-clos-functions-list))
 
 (defconst vicare-custom-syntaxes-list
   (append vicare-vicare-syntaxes-list
 	  vicare-vicare-aux-syntaxes-list
-	  vicare-nausicaa-syntaxes-list
 	  vicare-clos-syntaxes-list))
 
 (provide 'vicare-lists-of-symbols.el)
