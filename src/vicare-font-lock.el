@@ -548,9 +548,7 @@
 
     (,(eval-when-compile
 	(concat "(\\s-*"
-		(regexp-opt '("define-class" "define-label" "define-mixin"
-			      "define-builtin-label"
-			      "define-struct" "define-record")
+		(regexp-opt '("define-label" "define-mixin" "define-interface" "define-struct")
 			    'symbols)
 		"\\s-+" ;white space separator
 		"(?"    ;optional open paren
