@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-07-20 07:58:39 marco>
+;; Time-stamp: <2016-07-22 12:51:20 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -698,6 +698,7 @@ in the Scheme mode hook."
     (try						. 1)
     (unwind-protect					. 1)
     (virtual-method					. 1)
+    (seal-method					. 1)
     (with-unwind-protection				. 1)
     (with-unwind-handler				. 1)
     (with-escape-handlers-stack				. 0)
