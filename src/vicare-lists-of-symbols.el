@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-07-25 07:08:59 marco>
+;; Time-stamp: <2016-07-25 16:11:57 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -807,7 +807,6 @@ language built ins.")
     "define-type-descriptors" "strip-angular-parentheses"
     "type-predicate" "equality-predicate" "comparison-procedure" "hash-function"
     "mixins" "implements" "method-prototype"
-    "private" "protected" "public"
 
     "expander-options" "compiler-options"
 
@@ -910,7 +909,8 @@ language built ins.")
     "default-language" "typed-language" "strict-r6rs"
     "stdin" "stdout" "stderr"
     "pair" "pair-of" "list-of" "nelist-of" "vector-of" "nevector-of" "hashtable" "alist" "enumeration"
-    "parent-of" "ancestor-of")
+    "parent-of" "ancestor-of"
+    "private" "protected" "public")
   "List of auxiliary syntaxes from the Vicare libraries.")
 
 (defconst vicare-vicare-functions-list
