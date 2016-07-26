@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-07-22 12:51:20 marco>
+;; Time-stamp: <2016-07-26 09:32:21 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -680,6 +680,9 @@ in the Scheme mode hook."
     (parameterize					. 1)
     (parameterise					. 1)
     (parametrise					. 1)
+    (public						. 0)
+    (protected						. 0)
+    (private						. 0)
     (recursion						. 1)
     (receive						. 2)
     (receive/std					. 2)
