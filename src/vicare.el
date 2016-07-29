@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-07-26 09:32:21 marco>
+;; Time-stamp: <2016-07-29 12:29:45 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -88,7 +88,7 @@ The point is repositioned to the starting point."
     ;; (define-generic   the-thing ---)
     ;; (define-method    the-thing ---)
     (nil
-     "^(define\\(\\|\\*\\|/std\\|/typed\\|/checked\\|-\\(generic\\|method\\)\\)*\\s-+(?\\(\\sw+\\)" 3)
+     "^(define\\(\\|\\*\\|/std\\|/typed\\|/checked\\|/friend\\|-\\(generic\\|method\\)\\)*\\s-+(?\\(\\sw+\\)" 3)
 
     ;; (define-constant		the-thing ---)
     ;; (define-inline-constant	the-thing ---)
@@ -635,6 +635,7 @@ in the Scheme mode hook."
     (define/std						. 1)
     (define/typed					. 1)
     (define/checked					. 1)
+    (define/friend					. 1)
     (lambda/std						. 1)
     (lambda/typed					. 1)
     (lambda/checked					. 1)
