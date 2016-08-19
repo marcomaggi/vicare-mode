@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-07-29 12:29:45 marco>
+;; Time-stamp: <2016-08-19 07:42:24 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -139,12 +139,12 @@ For details on how to use it see `imenu-generic-expression'.")
 
 ;;;; file templates
 
-(defconst vicare-file-template-library
-  "
-
+(defun vicare-file-template-library nil
+  "Return a string representing a Vicare library template."
+  (concat "
 \
-\#!r6rs
-\(library \(name\)
+\#!vicare
+\(library \(" (vicare-p-stripped-file-name) "\)
   \(options typed-language\)
   \(export\)
   \(import \(vicare\)\)
@@ -161,18 +161,17 @@ For details on how to use it see `imenu-generic-expression'.")
 ;;; end of file
 ;; Local Variables:
 ;; mode: vicare
-;; coding: utf-8
 ;; End:
-" "Template for a Vicare Scheme library.")
+"))
 
 ;;; --------------------------------------------------------------------
 
-(defconst vicare-file-template-test
-  "
-
+(defun vicare-file-template-test nil
+  "Return a string representing a Vicare test program template."
+  (concat "
 \
 \#!vicare
-\(program \(test\)
+\(program \(" (vicare-p-stripped-file-name) "\)
   \(options typed-language\)
   \(import \(vicare\)
     \(vicare checks\)\)
@@ -200,37 +199,41 @@ For details on how to use it see `imenu-generic-expression'.")
 ;;; end of file
 ;; Local Variables:
 ;; mode: vicare
-;; coding: utf-8
 ;; End:
-" "Template for a Vicare Scheme test file.")
+"))
 
 ;;; --------------------------------------------------------------------
 
-(defconst vicare-file-template-program
-  "
-
+(defun vicare-file-template-program nil
+  "Return a string representing a Vicare program template."
+  (concat "
 \
-#!r6rs
-\(import \(vicare\)
-  \(vicare arguments validation\)\)
+#!vicare
+\(program \(" (vicare-p-stripped-file-name) "\)
+  \(options typed-language\)
+  \(import \(vicare\)\)
 
 \
 ;;;; code
 
 
+\
+;;;; done
+
+#| end of program |# \)
+
 ;;; end of file
 ;; Local Variables:
 ;; mode: vicare
-;; coding: utf-8
 ;; End:
-" "Template for a Vicare Scheme program file.")
+"))
 
 ;;; --------------------------------------------------------------------
 
 (defconst vicare-templates-alist
-  `(("library"		. ,vicare-file-template-library)
-    ("test"		. ,vicare-file-template-test)
-    ("program"		. ,vicare-file-template-program))
+  `(("library"		. vicare-file-template-library)
+    ("test"		. vicare-file-template-test)
+    ("program"		. vicare-file-template-program))
   "Alist of Vicare Scheme file templates used by `vicare-auto-insert-template'.")
 
 ;;; --------------------------------------------------------------------
@@ -256,6 +259,10 @@ License   along   with    this   program.    If   not,   see
 
 ;;; --------------------------------------------------------------------
 ;;; customisable functions
+
+(defvar vicare-default-coding-system
+  'utf-8-unix
+  "Customisable file coding system.")
 
 (defvar vicare-insertions-copyright-owner-full-name-function
   #'(lambda ()
@@ -313,7 +320,8 @@ The argument INDENTATION_PREFIX is a prefix added to the inserted
 text, it should the opening of a line comment."
   (when (not INDENTATION_PREFIX)
     (setq INDENTATION_PREFIX (read-string "Header indentation prefix: ")))
-  (let ((PARTOF			(completing-read "Part of: " vicare-file-header-part-of-collection))
+  (let ((PARTOF			(cdr (assoc (completing-read "Part of: " vicare-file-header-part-of-collection)
+					    vicare-file-header-part-of-collection)))
 	(CREATION_DATE		(format-time-string "%a %b %e, %Y"))
 	(COPYRIGHT_OWNER	(funcall vicare-insertions-copyright-owner-full-name-function))
 	(COPYRIGHT_YEAR		(format-time-string "%Y"))
@@ -325,6 +333,11 @@ text, it should the opening of a line comment."
 	     "\n\nAbstract\n\n\n\nCopyright (C) " COPYRIGHT_YEAR " " COPYRIGHT_OWNER
 	     " <" (funcall vicare-insertions-copyright-owner-email-function) ">\n"
 	     vicare-p-software-license-GPL3) INDENTATION_PREFIX)))
+
+(defun vicare-p-stripped-file-name nil
+  (let ((FILENAME (buffer-file-name (current-buffer))))
+    (and (eq FILENAME nil) (setq FILENAME (read-string "File name: ")))
+    (file-name-sans-extension (file-name-nondirectory FILENAME))))
 
 (defun vicare-auto-insert-template ()
   "Insert a Vicare Scheme template file.
@@ -338,11 +351,13 @@ This function  is meant to  be associated to the  file extensions
 
 "
   (interactive)
+  (insert (concat ";;; -*- coding: " (symbol-name vicare-default-coding-system) "  -*-\n"))
   (insert (vicare-compose-file-header ";;;"))
-  (insert (cdr (assoc (completing-read "Type of file: " vicare-templates-alist nil t "library")
-		      vicare-templates-alist)))
+  (insert (let ((funcname (cdr (assoc (completing-read "Type of file: " vicare-templates-alist nil t "library")
+				      vicare-templates-alist))))
+	    (funcall funcname)))
   (goto-char (point-min))
-  (set-buffer-file-coding-system 'utf-8))
+  (set-buffer-file-coding-system vicare-default-coding-system))
 
 
 ;;;; custom indentation functions
