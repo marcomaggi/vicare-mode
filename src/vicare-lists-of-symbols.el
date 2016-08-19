@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-08-08 07:25:41 marco>
+;; Time-stamp: <2016-08-19 07:43:39 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -778,7 +778,9 @@ language built ins.")
   "List of strings to be highlighted as warning when present in a comment.")
 
 (defconst vicare-vicare-syntaxes-list
-  '("begin0"
+  '("reader-import"
+
+    "begin0"
     "receive" "receive/std" "receive/checked"
     "receive-and-return" "receive-and-return/std" "receive-and-return/checked"
     "module" "include" "xor"
