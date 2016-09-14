@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-08-19 07:42:24 marco>
+;; Time-stamp: <2016-09-14 07:29:43 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -555,8 +555,6 @@ in the Scheme mode hook."
 
 (defconst vicare-indent-r6rs
   '((assertion-violation		. 1)
-    (assert-signature			. 1)
-    (assert-signature-and-return	. 1)
     (assp				. 1)
     (call-with-bytevector-output-port	. 1)
     (call-with-current-continuation	. 1)
@@ -605,7 +603,9 @@ in the Scheme mode hook."
   "List of indentation rules for R6RS Scheme forms.")
 
 (defconst vicare-indent-vicare
-  '((begin0						. 1)
+  '((assert-signature					. 1)
+    (assert-signature-and-return			. 1)
+    (begin0						. 1)
     (begin-for-syntax					. 0)
     (catch						. 1)
     (case-define					. 1)
@@ -620,6 +620,7 @@ in the Scheme mode hook."
     (case-lambda/typed					. 0)
     (case-lambda/checked				. 0)
     (case-lambda*					. 0)
+    (cast-signature					. 1)
     (named-case-lambda					. 1)
     (named-case-lambda/std				. 1)
     (named-case-lambda/typed				. 1)
