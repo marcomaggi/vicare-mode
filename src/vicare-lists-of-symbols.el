@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-08-19 07:43:39 marco>
+;; Time-stamp: <2016-09-20 07:11:13 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1633,8 +1633,8 @@ language built ins.")
     "time-from-now"
     "time-gmt-offset"
     "time-it"
-    "time-nanosecond"
-    "time-second"
+    "time-nanoseconds"
+    "time-seconds"
     "top-level-value"
     "top-level-bound?"
     "set-top-level-value!"
