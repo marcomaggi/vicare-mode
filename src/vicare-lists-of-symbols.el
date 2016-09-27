@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-09-20 07:11:13 marco>
+;; Time-stamp: <2016-09-27 07:50:26 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -908,7 +908,7 @@ language built ins.")
     "?" ":" "!" "%" "&" "^" "~" "<<" ">>" "⏐" "⏐⏐" "¦" "¦¦" "**" "=="
     "∧" "∨" "⊻" "¬" "×" "≠" "⋅"
     "brace" "return" "continue" "break" "with"
-    "default-language" "typed-language" "strict-r6rs" "strict-type-checking"
+    "default-language" "typed-language" "strict-r6rs" "strict-type-checking" "predicate-type-propagation"
     "stdin" "stdout" "stderr"
     "pair" "pair-of" "list-of" "nelist-of" "vector-of" "nevector-of" "hashtable" "alist" "enumeration"
     "parent-of" "ancestor-of"
