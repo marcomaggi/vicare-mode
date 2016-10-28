@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-09-27 07:50:26 marco>
+;; Time-stamp: <2016-10-28 07:28:41 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1483,7 +1483,7 @@ language built ins.")
     "record-guardian-log"
     "record-guardian-logger"
     "record=?"
-    "record-reset"
+    "record-reset!"
     "record-object?"
     "record-and-rtd?"
 ;;; "record-type-and-record?"
@@ -1585,7 +1585,7 @@ language built ins.")
     "struct-predicate"
     "struct-printer"
     "struct-ref"
-    "struct-reset"
+    "struct-reset!"
     "struct-rtd"
     "struct-set!"
     "struct-type-destructor"
