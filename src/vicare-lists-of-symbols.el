@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-10-28 07:28:41 marco>
+;; Time-stamp: <2016-10-28 08:30:16 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1574,25 +1574,26 @@ language built ins.")
     "strndup*"
     "struct=?"
     "struct?"
-    "struct-constructor"
     "struct-destructor"
-    "struct-field-accessor"
-    "struct-field-mutator"
     "struct-guardian-log"
     "struct-guardian-logger"
     "struct-length"
     "struct-name"
-    "struct-predicate"
     "struct-printer"
     "struct-ref"
     "struct-reset!"
     "struct-rtd"
     "struct-set!"
+    "struct-type-name"
+    "struct-type-symbol"
+    "struct-type-constructor"
+    "struct-type-predicate"
     "struct-type-destructor"
     "struct-type-field-names"
     "struct-type-descriptor?"
-    "struct-type-name"
-    "struct-type-symbol"
+    "struct-type-field-accessor"
+    "struct-type-field-mutator"
+    ;;"struct-type-field-method"
     "sub1"
     "subbytevector-s8"
     "subbytevector-s8/count"
