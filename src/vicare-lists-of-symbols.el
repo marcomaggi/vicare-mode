@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-10-28 08:30:16 marco>
+;; Time-stamp: <2016-10-28 09:55:15 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -1508,8 +1508,8 @@ language built ins.")
     "set-pointer-null!"
     "set-port-buffer-mode!"
     "set-port-mode!"
-    "set-rtd-destructor!"
-    "set-rtd-printer!"
+    "set-struct-type-destructor!"
+    "set-struct-type-printer!"
     "set-symbol-value!"
     "sign"
     "sinh"
@@ -1582,7 +1582,7 @@ language built ins.")
     "struct-printer"
     "struct-ref"
     "struct-reset!"
-    "struct-rtd"
+    "struct-std"
     "struct-set!"
     "struct-type-name"
     "struct-type-symbol"
