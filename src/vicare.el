@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2016-09-14 07:29:43 marco>
+;; Time-stamp: <2016-12-10 07:19:09 marco>
 ;; Keywords: languages
 
 ;; This file is part of Vicare Mode.
@@ -72,7 +72,7 @@ The point is repositioned to the starting point."
 ;;;; imenu customisation
 
 (defconst vicare-imenu-generic-expression
-  '(
+  `(
 ;;; functions, generic functions, methods
 
     ;; (define           (the-func ---) ---)
@@ -80,6 +80,8 @@ The point is repositioned to the starting point."
     ;; (define/typed     (the-func ---) ---)
     ;; (define/checked   (the-func ---) ---)
     ;; (define/std       (the-func ---) ---)
+    ;; (define/friend    (the-func ---) ---)
+    ;; (define/overload  (the-func ---) ---)
     ;; (define-generic   (the-func ---) ---)
     ;; (define-method    (the-func ---) ---)
     ;;
@@ -87,8 +89,19 @@ The point is repositioned to the starting point."
     ;; (define*          the-thing ---)
     ;; (define-generic   the-thing ---)
     ;; (define-method    the-thing ---)
-    (nil
-     "^(define\\(\\|\\*\\|/std\\|/typed\\|/checked\\|/friend\\|-\\(generic\\|method\\)\\)*\\s-+(?\\(\\sw+\\)" 3)
+    (nil ;;"Functions and Variables"
+     ,(concat "^("
+     	      (regexp-opt '("define" "define*"
+     			    "define/std" "define/typed" "define/checked" "define/friend" "define/overload"
+     			    "define-generic" "define-method")
+     			  'symbols)
+     	      "\\s-+(?{?\\(\\sw+\\)")
+     ;;This number  is the 1-based  index of the  matching subexpression
+     ;;that  matches  the  variable  name.  We  need  to  remember  that
+     ;;`regexp-opt'  with second  operand  "symbol"  generates a  single
+     ;;matching  subexpression  "\\(  ...   \\)"   and  uses  a  lot  of
+     ;;non-matching subexpressions "\\(?: ... \\)".
+     2)
 
     ;; (define-constant		the-thing ---)
     ;; (define-inline-constant	the-thing ---)
@@ -105,12 +118,19 @@ The point is repositioned to the starting point."
 
 ;;; types, labels and classes
 
-    ;; (define-label         <the-tag> ---)
-    ;; (define-builtin-label <the-tag> ---)
-    ;; (define-class         <the-tag> ---)
-    ;; (define-type          <the-tag> ---)
-    ("Labels and Classes"
-     "^(define-\\(\\(\\(builtin-\\)?label\\)\\|class\\|type\\)\\s-+\\(\\sw+\\)" 4)
+    ;; (define-label-type <the-tag> ---)
+    ;; (define-mixin-type <the-tag> ---)
+    ;; (define-type       <the-tag> ---)
+    (nil
+     ,(concat "^("
+	      (regexp-opt '("define-type" "define-record-type" "define-label-type" "define-mixin-type") 'symbols)
+	      "\\s-+(?\\(\\sw+\\)")
+     ;;This number  is the 1-based  index of the  matching subexpression
+     ;;that  matches  the  variable  name.  We  need  to  remember  that
+     ;;`regexp-opt'  with second  operand  "symbol"  generates a  single
+     ;;matching  subexpression  "\\(  ...   \\)"   and  uses  a  lot  of
+     ;;non-matching subexpressions "\\(?: ... \\)".
+     2)
 
 ;;; syntax definitions
 
@@ -120,16 +140,16 @@ The point is repositioned to the starting point."
     ;; (define-syntax  the-macro ---)
     ;; (define-syntax* the-macro ---)
     ;; (define-syntax-rule (the-macro ---) ---)
-    ("Macros"
+    (nil ;;"Macros"
      "^(define-\\(syntax\\(\\|\\*\\|-rule\\)\\|inline\\)\\s-+(?\\(\\sw+\\)" 3)
 
     ;; (define-generic-definer  the-macro ---)
     ;; (define-generic*-definer the-macro ---)
-    ("Macros"
+    (nil ;;"Macros"
      "^(define-generic\\*?-definer\\s-+\\(\\sw+\\)" 1)
 
     ;; (define-argument-validation (name ---) ---)
-    ("Argument Validations"
+    (nil ;;"Argument Validations"
      "^(define-argument-validation\\s-+(\\(\\sw+\\)" 1))
 
   "Customise imenu for Vicare Scheme mode.
